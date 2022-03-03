@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Selectors</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a class="active_nav" href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+
+
+
+
+
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>jQuery Tutorial</h2>
+          <a href="jquery.html">jQuery HOME</a>
+          <a href="jquery_intro.html">jQuery Intro</a>
+          <a href="jquery_start.html">jQuery Get Started</a>
+          <a href="jquery_syntax.html">jQuery Syntax</a>
+          <a class="active" href="jquery_selectors.html">jQuery Selectors</a>
+          <a href="jquery_events.html">jQuery Events</a>
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>jQuery Selectors</h1>
+          <div class="pagination">
+            <a class="leftbutton but" href="jquery_syntax.html">&lt; Previous</a>
+            <a class="rightbutton but" href="jquery_events.html">Next &gt;</a>
+          </div>
+
+          <div class="general">
+
+            <p>jQuery selectors are one of the most important parts of the jQuery library.</p>
+
+          </div>
+
+          <div class="general">
+            <h2>jQuery Selectors</h2>
+            <p>jQuery selectors allow you to select and manipulate HTML element(s).</p>
+            <p>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.</p>
+            <div class="highlight">
+              <p>All selectors in jQuery start with the dollar sign and parentheses: $().</p>
+
+            </div>
+
+          </div>
+
+          <div class="general">
+            <h2>The element Selector</h2>
+            <p>The jQuery element selector selects elements based on the element name.</p>
+            <p>You can select all &lt;p&gt; elements on a page like this:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>$("p") </p>
+              </div>
+            </div>
+            <div class="example">
+              <h3>When a user clicks on a button, all <p> elements will be hidden:</h3>
+              <div class="egcontent">
+                <p>$(document).ready(function(){</p><p>
+  $("button").click(function(){</p><p>
+    $("p").hide();</p><p>
+  });</p><p>
+});</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>The #id Selector</h2>
+            <p>The jQuery <span class="imp">#id</span> selector uses the id attribute of an HTML tag to find the specific element.</p>
+            <p>An id should be unique within a page, so you should use the #id selector when you want to find a single, unique element.</p>
+            <p>To find an element with a specific id, write a hash character, followed by the id of the HTML element:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>$("#test") </p>
+              </div>
+            </div>
+            <p>When a user clicks on a button, the element with id="test" will be hidden:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$(document).ready(function(){</p><p>
+  $("button").click(function(){</p><p>
+    $("#test").hide();</p><p>
+  });</p><p>
+});</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>The .class Selector</h2>
+            <p>The jQuery <span class="imp">.class</span> selector finds elements with a specific class.</p>
+            <p>To find elements with a specific class, write a period character, followed by the name of the class:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>$(".test")</p>
+              </div>
+            </div>
+            <p>When a user clicks on a button, the elements with class="test" will be hidden:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$(document).ready(function(){</p><p>
+  $("button").click(function(){</p><p>
+    $(".test").hide();</p><p>
+  });</p><p>
+});</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="jquery_syntax.html">&lt; Previous</a>
+            <a class="rightbutton but" href="jquery_events.html">Next &gt;</a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Glossary/jQuery">Mozilla jQuery</a>
+         <a href="https://www.w3schools.com/jquery/default.asp">w3schools jQuery</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

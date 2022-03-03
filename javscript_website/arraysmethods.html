@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Array Methods</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a class="active" href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Array Methods</h1>
+            <div class="pagination">
+              <a class="leftbutton but" href="arrays.html"> < Previous </a>
+              <a class="rightbutton but" href="arrayiteration.html">Next ></a>
+            </div>
+          <div class="general">
+            <h2>Converting Arrays to Strings</h2>
+            <p>The JavaScript method <span class="imp">toString()</span> converts an array to a string of (comma separated) array values.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>document.getElementById("demo").innerHTML = fruits.toString();</p>
+              </div>
+              <p>Result:</p>
+              <div class="egcontent">
+                <p>Banana,Orange,Apple,Mango</p>
+              </div>
+            </div>
+            <p>The <span class="imp">join() </span> method also joins all array elements into a string.</p>
+            <p>It behaves just like <span class="imp">toString()</span>, but in addition you can specify the separator:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>document.getElementById("demo").innerHTML = fruits.join(" * ");</p>
+              </div>
+              <p>Result:</p>
+              <div class="egcontent">
+                <p>Banana * Orange * Apple * Mango</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Popping</h2>
+            <p>The <span class="imp">pop()</span> method removes the last element from an array: </p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>fruits.pop();              // Removes the last element ("Mango") from fruits</p>
+              </div>
+            </div>
+            <p>The pop() method returns the value that was "popped out".</p>
+          </div>
+          <div class="general">
+            <h2>Pushing</h2>
+            <p>The <span class="imp">push()</span> method adds a new element to an array (at the end):</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits</p>
+              </div>
+            </div>
+            <p>The <span class="imp">push()</span> method returns the new array length.</p>
+          </div>
+          <div class="general">
+            <h2>Shifting Elements</h2>
+            <p>The shift() method removes the first array element and "shifts" all other elements to a lower index.</p>
+
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>fruits.shift();            // Removes the first element "Banana" from fruits</p>
+                <p>The shift() method returns the string that was "shifted out".</p>
+              </div>
+            </div>
+            <p>The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>fruits.unshift("Lemon");    // Adds a new element "Lemon" to fruits </p>
+              </div>
+            </div>
+            <p>The <span class="imp">unshift()</span> method returns the new array length.</p>
+          </div>
+          <div class="general">
+            <h2>Deleting Elements</h2>
+            <p>Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator <span class="imp">delete</span>:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>delete fruits[0];           // Changes the first element in fruits to undefined </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Splicing an Array</h2>
+            <p>The <span class="imp">splice()</span> method can be used to add new items to an array: </p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>fruits.splice(2, 0, "Lemon", "Kiwi");</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Using splice() to Remove Elements</h2>
+            <p>With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>fruits.splice(0, 1);        // Removes the first element of fruits</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Merging (Concatenating) Arrays</h2>
+            <p>The <span class="imp">concat()</span> method creates a new array by merging (concatenating) existing arrays:</p>
+
+            <div class="example">
+              <h3>Example (Merging Two Arrays)</h3>
+              <div class="egcontent">
+                <p> var myGirls = ["Cecilie", "Lone"];</p><p>
+var myBoys = ["Emil", "Tobias", "Linus"];</p><p>
+var myChildren = myGirls.concat(myBoys);   // Concatenates (joins) myGirls and myBoys </p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>The <span class="imp">concat()</span> method does not change the existing arrays. It always returns a new array.</p>
+            </div>
+            <p>The <span class="imp">concat()</span> method can take any number of array arguments:</p>
+            <div class="example">
+              <h3>Example (Merging Three Arrays)</h3>
+              <div class="egcontent">
+                <p> var arr1 = ["Cecilie", "Lone"];</p><p>
+var arr2 = ["Emil", "Tobias", "Linus"];</p><p>
+var arr3 = ["Robin", "Morgan"];</p><p>
+var myChildren = arr1.concat(arr2, arr3);   // Concatenates arr1 with arr2 and arr3 </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Slicing an Array</h2>
+            <p>The <span class="imp">slice()</span> method slices out a piece of an array into a new array.</p><p>
+
+This example slices out a part of an array starting from array element 1 ("Orange"):</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];</p><p>
+                  var citrus = fruits.slice(1);</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>The slice() method creates a new array. It does not remove any elements from the source array.</p>
+              <p>The slice() method can take two arguments like slice(1, 3).</p><p>
+The method then selects elements from the start argument, and up to (but not including) the end argument.</p>
+        <p>If the end argument is omitted, like in the first examples, the slice() method slices out the rest of the array.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Sorting an Array</h2>
+            <p>The <span class="imp">sort()</span> method sorts an array alphabetically: </p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p><p>
+fruits.sort();        // Sorts the elements of fruits</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="arrays.html"> < Previous </a>
+            <a class="rightbutton but" href="arrayiteration.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

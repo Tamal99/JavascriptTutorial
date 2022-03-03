@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript While Loop</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a class="active" href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript While Loop</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="loopfor.html"> < Previous </a>
+            <a class="rightbutton but" href="break.html">Next ></a>
+          </div>
+          <div class="general">
+            <p>Loops can execute a block of code as long as a specified condition is true.</p>
+          </div>
+
+          <div class="general">
+            <h2>The While Loop</h2>
+            <p>The <span class="imp">while</span> loop loops through a block of code as long as a specified condition is true.</p>
+            <div class="example">
+              <h3>Syntax</h3>
+              <div class="egcontent">
+                <p>while (condition) {</p><p>
+  // code block to be executed</p><p>
+}</p>
+              </div>
+            </div>
+            <p>In the following example, the code in the loop will run, over and over again, as long as a variable (i) is less than 10:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>while (i < 10) {</p><p>
+  text += "The number is " + i;</p><p>
+  i++;</p><p>
+}</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>If you forget to increase the variable used in the condition, the loop will never end. This will crash your browser.</p>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>The Do/While Loop</h2>
+            <p>The <span class="imp">do/while</span> loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+            <div class="example">
+              <h3>Syntax</h3>
+              <div class="egcontent">
+                <p>do {</p><p>
+  // code block to be executed</p><p>
+}</p><p>
+while (condition);</p>
+              </div>
+            </div>
+            <p>The example below uses a <span class="imp">do/while</span> loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>do {</p><p>
+  text += "The number is " + i;</p><p>
+  i++;</p><p>
+}</p><p>
+while (i < 10); </p>
+              </div>
+            </div>
+            <p>Do not forget to increase the variable used in the condition, otherwise the loop will never end!</p>
+          </div>
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="loopfor.html"> < Previous </a>
+            <a class="rightbutton but" href="break.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

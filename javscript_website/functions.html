@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Functions</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a class="active" href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Functions</h1>
+
+
+            <div class="pagination">
+              <a class="leftbutton but" href="datatypes.html"> < Previous </a>
+              <a class="rightbutton but" href="objects.html">Next ></a>
+            </div>
+
+
+          <div class="general">
+            <p>A JavaScript function is a block of code designed to perform a particular task.</p>
+            <p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>function myFunction(p1, p2) {</p>
+                <p>return p1 * p2;   // The function returns the product of p1 and p2</p>
+                <p>}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Function Syntax</h2>
+            <p>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().</p>
+            <p>Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).</p>
+            <p>The parentheses may include parameter names separated by commas:</p><p>
+(parameter1, parameter2, ...)</p>
+            <p>The code to be executed, by the function, is placed inside curly brackets: {}</p>
+            <div class="example">
+
+              <div class="egcontent">
+                <p>function name(parameter1, parameter2, parameter3) {</p>
+                <p>// code to be executed</p>
+                <p>}</p>
+              </div>
+            </div>
+            <p>Function parameters are listed inside the parentheses () in the function definition.</p>
+            <p>Function arguments are the values received by the function when it is invoked.</p>
+            <p>Inside the function, the arguments (the parameters) behave as local variables.</p>
+            <div class="highlight">
+              <p>A Function is much the same as a Procedure or a Subroutine, in other programming languages.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Function Invocation</h2>
+            <p>The code inside the function will execute when "something" invokes (calls) the function:</p>
+            <div class="highlight">
+              <ul>
+                <li>When an event occurs (when a user clicks a button)</li>
+                <li>When it is invoked (called) from JavaScript code</li>
+                <li>Automatically (self invoked)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Function Return</h2>
+            <p>When JavaScript reaches a return statement, the function will stop executing.</p>
+            <p>If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
+            <p>Functions often compute a return value. The return value is "returned" back to the "caller":</p>
+            <div class="example">
+              <h3>Example</h3>
+              <p>Calculate the product of two numbers, and return the result:</p>
+              <div class="egcontent">
+                <p>var x = myFunction(4, 3);   // Function is called, return value will end up in x</p>
+                <p> </p>
+                <p>function myFunction(a, b) {</p>
+                  <p>return a * b;             // Function returns the product of a and b</p>
+                <p>}</p>
+              </div>
+              <p>The result in x will be:</p>
+              <div class="egcontent">
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Why Functions?</h2>
+            <p>You can reuse code: Define the code once, and use it many times.</p>
+            <p>You can use the same code many times with different arguments, to produce different results.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <p>Convert Fahrenheit to Celsius:</p>
+              <div class="egcontent">
+                <p>function toCelsius(fahrenheit) {</p>
+                  <p>return (5/9) * (fahrenheit-32);</p>
+                <p>}</p>
+                <p>document.getElementById("demo").innerHTML = toCelsius(77);</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>The () Operator Invokes the Function</h2>
+            <p>Using the example above, toCelsius refers to the function object, and toCelsius() refers to the function result.</p>
+            <p>Accessing a function without () will return the function object instead of the function result.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>function toCelsius(fahrenheit) {</p>
+                  <p>return (5/9) * (fahrenheit-32);</p>
+                <p>}</p>
+                <p>document.getElementById("demo").innerHTML = toCelsius;</p>
+              </div>
+              <p>output</p>
+              <div class="egcontent">
+                <p>function toCelsius(f) { return (5/9) * (f-32); }</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Functions Used as Variable Values</h2>
+            <p>Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <p>Instead of using a variable to store the return value of a function:</p>
+              <div class="egcontent">
+                <p>var x = toCelsius(77);</p>
+                <p>var text = "The temperature is " + x + " Celsius";</p>
+              </div>
+              <p>You can use the function directly, as a variable value:</p>
+              <div class="egcontent">
+                <p>var text = "The temperature is " + toCelsius(77) + " Celsius";</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Local Variables</h2>
+            <p>Variables declared within a JavaScript function, become LOCAL to the function.</p>
+            <p>Local variables can only be accessed from within the function.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>// code here can NOT use carName</p><p></p>
+                <p>function myFunction() {</p>
+                  <p>var carName = "Volvo";</p>
+                  <p>// code here CAN use carName</p>
+                  <p>}</p>
+                  <p>// code here can NOT use carName</p>
+              </div>
+            </div>
+            <p>Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.</p>
+            <p>Local variables are created when a function starts, and deleted when the function is completed.</p>
+          </div>
+
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="datatypes.html"> < Previous </a>
+            <a class="rightbutton but" href="objects.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

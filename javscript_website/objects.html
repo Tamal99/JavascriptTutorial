@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Objects</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a class="active" href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Objects</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="functions.html"> < Previous </a>
+            <a class="rightbutton but" href="events.html">Next ></a>
+          </div>
+
+          <div class="general">
+            <h2>Real Life Objects, Properties, and Methods</h2>
+            <p>In real life, a car is an object. </p>
+            <p>A car has properties like weight and color, and methods like start and stop:</p>
+            <p>All cars have the same properties, but the property values differ from car to car.</p>
+            <p>All cars have the same methods, but the methods are performed at different times.</p>
+          </div>
+          <div class="general">
+            <h2>JavaScript Objects</h2>
+            <p>You have already learned that JavaScript variables are containers for data values.</p>
+            <p>This code assigns a simple value (Fiat) to a variable named car:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>var car = "Fiat";</p>
+              </div>
+            </div>
+            <p>Objects are variables too. But objects can contain many values. </p>
+            <p>This code assigns many values (Fiat, 500, white) to a variable named car:</p>
+            <div class="example">
+
+              <div class="egcontent">
+                <p>var car = {type:"Fiat", model:"500", color:"white"};</p>
+              </div>
+            </div>
+            <p>The values are written as name:value pairs (name and value separated by a colon).</p>
+            <div class="highlight">
+              <p>JavaScript objects are containers for named values called properties or methods.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Object Definition</h2>
+            <p>You define (and create) a JavaScript object with an object literal:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</p>
+              </div>
+            </div>
+            <p>Spaces and line breaks are not important. An object definition can span multiple lines:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var person = {</p>
+                <p>firstName: "John",</p>
+                <p>lastName: "Doe",</p>
+                <p>age: 50,</p>
+                <p>eyeColor: "blue"</p>
+                <p>};</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Object Properties</h2>
+            <p>The name:values pairs in JavaScript objects are called properties:</p>
+            <div class="tab_div">
+              <table class="tab">
+                <tr>
+                  <th>Property</th>
+                  <th>Property Value</th>
+                </tr>
+                <tr>
+                  <td>firstName</td>
+                  <td>John</td>
+                </tr>
+                <tr>
+                  <td>lastName</td>
+                  <td>Doe</td>
+                </tr>
+                <tr>
+                  <td>age</td>
+                  <td> 	50</td>
+                </tr>
+                <tr>
+                  <td>eyeColor</td>
+                  <td>blue</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Accessing Object Properties</h2>
+            <p>You can access object properties in two ways:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>objectName.propertyName</p>
+              </div>
+            </div>
+            <p>or</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>objectName["propertyName"]</p>
+              </div>
+            </div>
+            <div class="example">
+              <h3>Example1</h3>
+              <div class="egcontent">
+                <p>person.lastName;</p>
+              </div>
+            </div>
+            <div class="example">
+              <h3>Example2</h3>
+              <div class="egcontent">
+                <p>person["lastName"];</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Object Methods</h2>
+            <p>Objects can also have methods.</p>
+            <p>Methods are actions that can be performed on objects.</p>
+            <p>Methods are stored in properties as function definitions.</p>
+            <div class="tab_div">
+              <table class="tab">
+                <tr>
+                  <th>Property</th>
+                  <th>Property Value</th>
+                </tr>
+                <tr>
+                  <td>firstName</td>
+                  <td>John</td>
+                </tr>
+                <tr>
+                  <td>lastName</td>
+                  <td>Doe</td>
+                </tr>
+                <tr>
+                  <td>age</td>
+                  <td> 	50</td>
+                </tr>
+                <tr>
+                  <td>eyeColor</td>
+                  <td>blue</td>
+                </tr>
+                <tr>
+                  <td>fullName</td>
+                  <td>function() {return this.firstName + " " + this.lastName;}</td>
+                </tr>
+
+              </table>
+            </div>
+              <p>A method is a function stored as a property.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var person = {</p>
+                  <p> firstName: "John",</p>
+                  <p>lastName : "Doe",</p>
+                  <p>id       : 5566,</p>
+                  <p> fullName : function() {</p>
+                    <p>return this.firstName + " " + this.lastName;</p>
+                    <p>  }</p>
+                    <p>};</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>The <b>this</b> Keyword</h2>
+            <p>In a function definition, <span class="imp">this</span> refers to the "owner" of the function.</p>
+            <p>In the example above, <span class="imp">this</span> is the person object that "owns" the fullName function.</p>
+            <p>In other words, <span class="imp">this.firstName</span> means the <span class="imp">firstName</span> property of this object.</p>
+            <p>Read more about the <span class="imp">this</span> keyword at JS this Keyword.</p>
+
+          </div>
+          <div class="general">
+            <h2>Accessing Object Methods</h2>
+            <p>You access an object method with the following syntax:</p>
+            <div class="example">
+
+              <div class="egcontent">
+                <p>objectName.methodName()</p>
+              </div>
+            </div>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>name = person.fullName();</p>
+              </div>
+            </div>
+            <p>If you access a method without the () parentheses, it will return the function definition:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>name = person.fullName;</p>
+              </div>
+              <p>output</p>
+              <div class="egcontent">
+                <p>function() { return this.firstName + " " + this.lastName; }</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>Do Not Declare Strings, Numbers, and Booleans as Objects!</h2>
+            <p>When a JavaScript variable is declared with the keyword "new", the variable is created as an object:</p>
+            <div class="example">
+              <h3></h3>
+              <div class="egcontent">
+                <p>var x = new String();        // Declares x as a String object</p>
+                <p>var y = new Number();        // Declares y as a Number objec</p>
+                <p>var z = new Boolean();       // Declares z as a Boolean object </p>
+              </div>
+            </div>
+            <p>Avoid <span class="imp">String, Number</span>, and <span class="imp">Boolean</span> objects. They complicate your code and slow down execution speed.</p>
+          </div>
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="functions.html"> < Previous </a>
+            <a class="rightbutton but" href="events.html">Next ></a>
+          </div>
+
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

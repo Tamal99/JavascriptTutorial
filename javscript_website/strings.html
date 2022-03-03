@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Strings</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a class="active" href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Strings</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="events.html"> < Previous </a>
+            <a class="rightbutton but" href="stringmethods.html">Next ></a>
+          </div>
+
+          <div class="general">
+            <p>JavaScript strings are used for storing and manipulating text.</p>
+          </div>
+          <div class="general">
+            <h2>JavaScript Strings</h2>
+            <p>A JavaScript string is zero or more characters written inside quotes.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = "John Doe";</p>
+              </div>
+            </div>
+            <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var answer1 = "It's alright";</p>
+                <p>var answer2 = "He is called 'Johnny'";</p>
+                <p>var answer3 = 'He is called "Johnny"';</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>String Length</h2>
+            <p>To find the length of a string, use the built-in length property:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";</p>
+                <p>var sln = txt.length;</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Escape Character</h2>
+            <p>Because strings must be written within quotes, JavaScript will misunderstand this string:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>var x = "We are the so-called "Vikings" from the north.";</p>
+              </div>
+
+            </div>
+            <p>The string will be chopped to "We are the so-called ".</p>
+            <p>The solution to avoid this problem, is to use the backslash escape character.</p>
+            <p>The backslash (\) escape character turns special characters into string characters:</p>
+            <p></p>
+            <p>The sequence \"  inserts a double quote in a string:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = "We are the so-called \"Vikings\" from the north."</p>
+              </div>
+            </div>
+            <p>The sequence \'  inserts a single quote in a string:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = 'It\'s alright.';</p>
+              </div>
+            </div>
+            <p>The sequence \\  inserts a backslash in a string:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = "The character \\ is called backslash.";</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Six other escape sequences are valid in JavaScript:</p>
+              <p> <b>\b</b> -   	Backspace</p>
+              <p> <b>\f</b> -  Form Feed</p>
+              <p> <b>\n</b> -   	New Line</p>
+              <p> <b>\r</b> -  Carriage Return</p>
+              <p> <b>\t</b> -   	Horizontal Tabulator</p>
+              <p> <b>\v</b> - Vertical Tabulator </p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Breaking Long Code Lines</h2>
+            <p>If a JavaScript statement does not fit on one line, the best place to break it is after an operator:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>document.getElementById("demo").innerHTML =</p>
+                <p>"Hello Dolly!"; </p>
+              </div>
+            </div>
+            <p>You can also break up a code line within a text string with a single backslash:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>document.getElementById("demo").innerHTML = "Hello \</p>
+                <p>Dolly!";</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>The <span class="imp">\</span> method is not the preferred method. It might not have universal support.</p>
+              <p> Some browsers do not allow spaces behind the <span class="imp">\</span> character.</p>
+            </div>
+            <p>A safer way to break up a string, is to use string addition:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>document.getElementById("demo").innerHTML = "Hello " + </p>
+                <p>"Dolly!";</p>
+              </div>
+            </div>
+            <p>You cannot break up a code line with a backslash:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>document.getElementById("demo").innerHTML = \ </p>
+                <p>"Hello Dolly!";</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Strings Can be Objects</h2>
+            <p>Normally, JavaScript strings are primitive values, created from literals:</p>
+            <p class="imp">var firstName = "John";</p>
+            <p>But strings can also be defined as objects with the keyword <span class="imp">new</span>:</p>
+            <p class="imp">var firstName = new String("John");</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = "John";</p>
+                <p>var y = new String("John");</p>
+                <p>// typeof x will return string</p>
+                <p>// typeof y will return object</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Don't create strings as objects. It slows down execution speed.</p>
+              <p>The new keyword complicates the code. This can produce some unexpected results:</p>
+            </div>
+            <p>When using the <span class="imp">==</span> operator, equal strings are equal:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = "John"</p>
+                <p>var y = new String("John");</p>
+                <p>// (x == y) is true because x and y have equal values</p>
+              </div>
+            </div>
+            <p>When using the === operator, equal strings are not equal, because the === operator expects equality in both type and value.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = "John"</p>
+                <p>var y = new String("John");</p>
+                <p>// (x === y) is false because x and y have different types (string and object) </p>
+              </div>
+            </div>
+            <p>Or even worse. Objects cannot be compared:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = new String("John"); </p>
+                <p>var y = new String("John");</p>
+                <p>// (x == y) is false because x and y are different objects</p>
+              </div>
+            </div>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = new String("John");</p>
+                <p>var y = new String("John");</p>
+                <p>// (x === y) is false because x and y are different objects</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Note the difference between (x==y) and (x===y).</p>
+              <p>Comparing two JavaScript objects will always return false.</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="events.html"> < Previous </a>
+            <a class="rightbutton but" href="stringmethods.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

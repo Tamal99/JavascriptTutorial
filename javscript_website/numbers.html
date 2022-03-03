@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Numbers</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a class="active" href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Numbers</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="stringmethods.html"> < Previous </a>
+            <a class="rightbutton but" href="arrays.html">Next ></a>
+          </div>
+          <div class="general">
+            <p>JavaScript has only one type of number. Numbers can be written with or without decimals.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = 3.14;    // A number with decimals</p>
+                <p>var y = 3;       // A number without decimals</p>
+              </div>
+            </div>
+            <p>Extra large or extra small numbers can be written with scientific (exponent) notation:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = 123e5;    // 12300000</p>
+                <p>var y = 123e-5;   // 0.00123</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Numbers are Always 64-bit Floating Point</h2>
+            <p>Unlike many other programming languages, JavaScript does not define different types of numbers, like integers, short, long, floating-point etc.</p>
+
+
+          </div>
+          <div class="general">
+            <h2>NaN - Not a Number</h2>
+            <p><span class="imp">NaN</span> is a JavaScript reserved word indicating that a number is not a legal number.</p>
+            <p>Trying to do arithmetic with a non-numeric string will result in <span class="imp">NaN</span> (Not a Number):</p>
+            <div class="example">
+              <h3>Example</h3>
+
+              <div class="egcontent">
+                <p>var x = 100 / "Apple";  // x will be NaN (Not a Number)</p>
+              </div>
+            </div>
+            <p>However, if the string contains a numeric value , the result will be a number:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = 100 / "10";     // x will be 10</p>
+              </div>
+            </div>
+            <p>You can use the global JavaScript function <span class="imp">isNaN()</span> to find out if a value is a number:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = 100 / "Apple";</p>
+                <p>isNaN(x);               // returns true because x is Not a Number</p>
+              </div>
+            </div>
+            <p>Watch out for NaN. If you use NaN in a mathematical operation, the result will also be NaN:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = NaN;</p>
+                <p>var y = 5;</p>
+                <p>var z = x + y;         // z will be NaN </p>
+              </div>
+            </div>
+            <p>Or the result might be a concatenation: </p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = NaN;</p>
+                <p>var y = "5";</p>
+                <p>var z = x + y;         // z will be NaN5 </p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>NaN is a number: typeof NaN returns number</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Infinity</h2>
+            <p><span class="imp">Infinity</span> (or <span class="imp">-Infinity</span>) is the value JavaScript will return if you calculate a number outside the largest possible number.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var myNumber = 2;</p>
+                <p>while (myNumber != Infinity) {   // Execute until Infinity</p>
+                  <p>myNumber = myNumber * myNumber;</p>
+                <p>}</p>
+              </div>
+            </div>
+            <p>Division by 0 (zero) also generates Infinity:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x =  2 / 0;       // x will be Infinity</p>
+                <p>var y = -2 / 0;       // y will be -Infinity</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p><span class="imp">Infinity</span> is a number: <span class="imp">typeof Infinity</span> returns <span class="imp">number</span>.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Numbers Can be Objects</h2>
+            <p>Normally JavaScript numbers are primitive values created from literals:</p>
+            <p><span class="imp">var x = 123;</span> </p>
+            <p>But numbers can also be defined as objects with the keyword new:</p>
+            <p><span class="imp">var y = new Number(123);</span> </p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = 123;</p>
+                <p>var y = new Number(123);</p>
+                <p>// typeof x returns number</p>
+                  <p>// typeof y returns object </p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="stringmethods.html"> < Previous </a>
+            <a class="rightbutton but" href="arrays.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

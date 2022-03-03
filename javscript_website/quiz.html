@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Arithmetic</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a class="active_nav" href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+  <div class="row">
+    <div class="quiz_sheet">
+      <div class="general">
+        <h1>JavaScript Quiz</h1>
+      </div>
+      <div class="general">
+        <div class="highlight">
+          <p>It is a javascript quiz for acquiring better grip in this programming language. </p>
+          <p>These questions are based upon what we have learnt in this tutorial.</p>
+          <p>All questions carry 1 mark</p>
+          <p>Result will be displayed when get result button is clicked.</p>
+        </div>
+      </div>
+      <div id="quiz"></div>
+      <button id="submit">Get Results</button>
+      <div id="results"></div>
+    </div>
+
+  </div>
+
+
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+      <script type="text/javascript">
+
+//example
+      var myQuestions = [
+      	{
+      		question: "1. Which of the following is correct about features of JavaScript?",
+      		answers: {
+      			a: 'JavaScript is is complementary to and integrated with HTML.',
+      			b: ' JavaScript is open and cross-platform.',
+      			c: 'Both of the above.'
+      		},
+      		correctAnswer: 'c'
+      	},
+      	{
+      		question: "2. Can you assign a anonymous function to a variable?",
+      		answers: {
+      			a: ' true',
+      			b: ' false',
+      			c: 'cant say'
+      		},
+      		correctAnswer: 'a'
+      	},
+        {
+      		question: "3. Which built-in method returns the index within the calling String object of the first occurrence of the specified value?",
+      		answers: {
+      			a: 'getIndex()',
+      			b: 'location()',
+      			c: 'indexOf()'
+      		},
+      		correctAnswer: 'c'
+      	}
+        ,
+        {
+      		question: "4. Which built-in method returns the calling string value converted to lower case?",
+      		answers: {
+      			a: 'toLowerCase()',
+      			b: 'toLower()',
+      			c: 'changeCase(case)'
+      		},
+      		correctAnswer: 'a'
+      	}
+        ,
+        {
+      		question: "5. Which of the following function of String object returns the character at the specified index?",
+      		answers: {
+      			a: 'charAt()',
+      			b: 'charCodeAt()',
+      			c: 'concat()'
+      		},
+      		correctAnswer: 'a'
+      	}
+        ,
+        {
+      		question: "6. Which of the following function of String object returns the index within the calling String object of the first occurrence of the specified value?",
+      		answers: {
+      			a: 'substr()',
+      			b: 'search()',
+      			c: 'indexOf()'
+      		},
+      		correctAnswer: 'c'
+      	}
+        ,
+        {
+      		question: "7. Which of the following function of String object creates an HTML anchor that is used as a hypertext target?",
+      		answers: {
+      			a: 'anchor()',
+      			b: 'link()',
+      			c: 'blink()'
+      		},
+      		correctAnswer: 'a'
+      	}
+        ,
+        {
+      		question: "8. Which of the following function of String object causes a string to be displayed in the specified color as if it were in a &ltfont color='color'&gt tag?",
+      		answers: {
+      			a: 'fontcolor()',
+      			b: 'font-color()',
+      			c: 'font_color'
+      		},
+      		correctAnswer: 'a'
+      	}
+        ,
+        {
+      		question: "9. Which of the following function of String object causes a string to be displayed as struck-out text, as if it were in a &ltstrike&gt tag?",
+      		answers: {
+      			a: 'STRIKE()',
+      			b: 'Strike()',
+      			c: 'strike()'
+      		},
+      		correctAnswer: 'c'
+      	}
+        ,
+        {
+      		question: "10. Which of the following function of Array object returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found?",
+      		answers: {
+      			a: 'LastIndexof()',
+      			b: 'lastIndexOf()',
+      			c: 'lastindexof()'
+      		},
+      		correctAnswer: 'b'
+      	}
+        ,
+        {
+      		question: "11. Which of the following function of Array object extracts a section of an array and returns a new array?",
+      		answers: {
+      			a: 'sliced()',
+      			b: 'slice()',
+      			c: 'spliced()'
+      		},
+      		correctAnswer: 'b'
+      	}
+        ,
+        {
+      		question: "12. Which of the following is true about cookie handling in JavaScript?",
+      		answers: {
+      			a: 'JavaScript can manipulate cookies using the cookie property of the Document object.',
+      			b: 'JavaScript can read, create, modify, and delete the cookie or cookies that apply to the current web page.',
+      			c: 'Both of the above.'
+      		},
+      		correctAnswer: 'c'
+      	}
+        ,
+        {
+      		question: "13. Which built-in method returns the character at the specified index?",
+      		answers: {
+      			a: 'getCharAt()',
+      			b: 'characterAt()',
+      			c: 'charAt()'
+      		},
+      		correctAnswer: 'c'
+      	}
+        ,
+        {
+      		question: "14. Which built-in method returns the characters in a string beginning at the specified location?",
+      		answers: {
+      			a: 'substr()',
+      			b: 'getSubstring()',
+      			c: 'Substring()'
+      		},
+      		correctAnswer: 'a'
+      	}
+        ,
+        {
+      		question: "15. Which of the following is true about variable naming conventions in JavaScript?",
+      		answers: {
+      			a: 'You should not use any of the JavaScript reserved keyword as variable name.',
+      			b: 'JavaScript variable names should not start with a numeral (0-9).',
+      			c: 'Both of the above.'
+      		},
+      		correctAnswer: 'c'
+      	}
+        ,
+        {
+      		question: "16. The function and  var are known as:",
+      		answers: {
+      			a: 'Keywords',
+      			b: 'Data types',
+      			c: 'Declaration statements'
+      		},
+      		correctAnswer: 'c'
+      	}
+        ,
+        {
+      		question: "17. Which one of the following is the correct way for calling the JavaScript code?",
+      		answers: {
+            a: 'Preprocessor',
+      			b: 'Triggering Event',
+      			c: 'Function/Method'
+      		},
+      		correctAnswer: 'c'
+      	}
+        ,
+        {
+      		question: "18. When there is an indefinite or an infinite value during an arithmetic computation in a program, then JavaScript prints______.",
+      		answers: {
+      			a: 'Prints an exception error',
+      			b: 'Prints an overflow error',
+      			c: 'Displays "Infinity"'
+      		},
+      		correctAnswer: 'c'
+      	}
+        ,
+        {
+      		question: "19. In JavaScript the x===y statement implies that:",
+      		answers: {
+      			a: 'Both x and y are equal in value, type and reference address as well.',
+      			b: 'Both are x and y are equal in value only.',
+      			c: 'Both are equal in the value and data type.'
+      		},
+      		correctAnswer: 'c'
+      	}
+      ];
+
+      function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+
+      	function showQuestions(questions, quizContainer){
+
+        	var output = [];
+        	var answers;
+
+
+        	for(var i=0; i<questions.length; i++){
+
+
+        		answers = [];
+
+
+        		for(letter in questions[i].answers){
+
+
+        			answers.push(
+        				'<label>'
+        					+ '<input type="radio" name="question'+i+'" value="'+letter+'">'
+        					+ letter + ': '
+        					+ questions[i].answers[letter]
+        				+ '</label>'
+        			);
+        		}
+
+
+        		output.push(
+        			'<div class="question">' + questions[i].question + '</div>'
+        			+ '<div class="answers">' + answers.join('') + '</div>'
+        		);
+        	}
+          quizContainer.innerHTML = output.join('');
+
+      	 }
+
+      	function showResults(questions, quizContainer, resultsContainer){
+
+          	var answerContainers = quizContainer.querySelectorAll('.answers');
+
+
+          	var userAnswer = '';
+          	var numCorrect = 0;
+
+
+          	for(var i=0; i<questions.length; i++){
+
+
+          		userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+
+
+          		if(userAnswer===questions[i].correctAnswer){
+
+          			numCorrect++;
+
+
+          			answerContainers[i].style.color = 'green';
+          		}
+
+          		else{
+
+          			answerContainers[i].style.color = 'red';
+          		}
+          	}
+
+
+          	resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+
+      	}
+
+
+      	showQuestions(questions, quizContainer);
+
+
+      	submitButton.onclick = function(){
+      		showResults(questions, quizContainer, resultsContainer);
+      	}
+      }
+
+
+      var quizContainer = document.getElementById('quiz');
+      var resultsContainer = document.getElementById('results');
+      var submitButton = document.getElementById('submit');
+      generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+      </script>
+  </body>
+</html>

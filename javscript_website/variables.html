@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Variables</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a class="active" href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript  Variables</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="syntax.html"> < Previous </a>
+            <a class="rightbutton but" href="operators.html">Next ></a>
+          </div>
+
+          <div class="general">
+
+            <p>JavaScript variables are containers for storing data values.</p>
+            <p>In this example, x, y, and z, are variables, declared with the var keyword:</p>
+
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = 5;</p>
+                <p>var y = 6;</p>
+                <p>var z = x + y;</p>
+              </div>
+            </div>
+            <p>From the example above, you can expect:</p>
+            <ul>
+              <li>x stores the value 5</li>
+              <li>y stores the value 6</li>
+              <li>z stores the value 11</li>
+            </ul>
+          </div>
+          <div class="general">
+            <h2>JavaScript Identifiers</h2>
+            <p>All JavaScript variables must be identified with unique names</p>
+            <p>These unique names are called identifiers.</p>
+            <p>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+            <p>The general rules for constructing names for variables (unique identifiers) are:</p>
+            <ul>
+              <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+              <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+              <li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li>
+              <li>Names are case sensitive (y and Y are different variables)</li>
+              <li>Reserved words (like JavaScript keywords) cannot be used as names</li>
+            </ul>
+            <div class="highlight">
+              <p>JavaScript identifiers are case-sensitive.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>The Assignment Operator</h2>
+            <p>In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.</p>
+            <p>This is different from algebra. The following does not make sense in algebra:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>x = x + 5;</p>
+              </div>
+            </div>
+            <p>In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to x.</p>
+            <p>(It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.)</p>
+            <div class="highlight">
+              <p>The "equal to" operator is written like == in JavaScript.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Data Types</h2>
+            <p>JavaScript variables can hold numbers like 100 and text values like "John Doe".</p>
+            <p>In programming, text values are called text strings.</p>
+            <p>JavaScript can handle many types of data, but for now, just think of numbers and strings. </p>
+            <p>Strings are written inside double or single quotes. Numbers are written without quotes.</p>
+            <p>If you put a number in quotes, it will be treated as a text string.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var pi = 3.14;</p>
+                <p>var person = "John Doe";</p>
+                <p>var answer = 'Yes I am!';</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Declaring (Creating) JavaScript Variables</h2>
+            <p>Creating a variable in JavaScript is called "declaring" a variable. </p>
+            <p>You declare a JavaScript variable with the var keyword:</p>
+
+            <div class="example">
+
+              <div class="egcontent">
+                <p>var carName;</p>
+              </div>
+            </div>
+            <p>After the declaration, the variable has no value (technically it has the value of <span class="imp">undefined</span>).</p>
+            <p>To assign a value to the variable, use the equal sign:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>carName = "Volvo";</p>
+              </div>
+            </div>
+            <p>You can also assign a value to the variable when you declare it:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>var carName = "Volvo";</p>
+              </div>
+            </div>
+            <p>In the example below, we create a variable called carName and assign the value "Volvo" to it.</p>
+            <p>Then we "output" the value inside an HTML paragraph with id="demo":</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>&lt;p id="demo"&gt;&lt;/p&gt;</p>
+                <p>&lt;script&gt;</p>
+                <p>var carName = "Volvo";</p>
+                <p>document.getElementById("demo").innerHTML = carName; </p>
+                <p>&lt;/script&gt;</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>It's a good programming practice to declare all variables at the beginning of a script.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>One Statement, Many Variables</h2>
+            <p>You can declare many variables in one statement.</p>
+            <p>Start the statement with var and separate the variables by comma:</p>
+
+            <div class="example">
+
+              <div class="egcontent">
+                <p>var person = "John Doe", carName = "Volvo", price = 200;</p>
+              </div>
+            </div>
+            <p>A declaration can span multiple lines: </p>
+            <div class="example">
+              <div class="egcontent">
+                <p>var person = "John Doe",</p>
+                <p>carName = "Volvo",</p>
+                <p>price = 200;</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Value = undefined</h2>
+            <p>In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.</p>
+            <p>A variable declared without a value will have the value <span class="imp">undefined</span>.</p>
+            <p>The variable carName will have the value undefined after the execution of this statement:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var carName;</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Re-Declaring JavaScript Variables</h2>
+            <p>If you re-declare a JavaScript variable, it will not lose its value.</p>
+            <p>The variable carName will still have the value "Volvo" after the execution of these statements:</p>
+
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var carName = "Volvo";</p>
+                <p>var carName;</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Arithmetic</h2>
+            <p>As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = 5 + 2 + 3;</p>
+              </div>
+            </div>
+            <p>You can also add strings, but strings will be concatenated:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = "John" + " " + "Doe";</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</p>
+            </div>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = "5" + 2 + 3;</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>The example given below will give 55 as its output.</p>
+            </div>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x =  2 + 3 + "5" ;</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="syntax.html"> < Previous </a>
+            <a class="rightbutton but" href="operators.html">Next ></a>
+          </div>
+
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

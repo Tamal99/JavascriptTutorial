@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Event Methods</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a class="active_nav" href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+
+
+
+
+
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>jQuery Tutorial</h2>
+          <a href="jquery.html">jQuery HOME</a>
+          <a href="jquery_intro.html">jQuery Intro</a>
+          <a href="jquery_start.html">jQuery Get Started</a>
+          <a href="jquery_syntax.html">jQuery Syntax</a>
+          <a href="jquery_selectors.html">jQuery Selectors</a>
+          <a class="active" href="jquery_events.html">jQuery Events</a>
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>jQuery Event Methods</h1>
+          <div class="pagination">
+            <a class="leftbutton but" href="jquery_selectors.html">&lt; Previous</a>
+
+          </div>
+
+          <div class="general">
+
+            <p>jQuery is tailor-made to respond to events in an HTML page.</p>
+
+          </div>
+
+          <div class="general">
+            <h2>What are Events?</h2>
+            <p>All the different visitors' actions that a web page can respond to are called events.</p>
+            <p>An event represents the precise moment when something happens.</p>
+            <p>Examples:</p>
+            <ul>
+              <li>moving a mouse over an element</li>
+              <li>selecting a radio button</li>
+              <li>clicking on an element</li>
+            </ul>
+            <p>The term "fires/fired" is often used with events. Example: "The keypress event is fired, the moment you press a key".</p>
+            <div class="tab_div">
+              <table class="tab">
+                <tr>
+                  <th>Mouse Events</th>
+                  <th>Keyboard Events</th>
+                  <th>Form Events</th>
+                  <th>Document/Window Events</th>
+                </tr>
+                <tr>
+                  <td>click</td>
+                  <td>keypress</td>
+                  <td>submit</td>
+                  <td>load</td>
+                </tr>
+                <tr>
+                  <td>dblclick</td>
+                  <td>keydown</td>
+                  <td>change</td>
+                  <td>resize</td>
+                </tr>
+                <tr>
+                  <td>mouseenter</td>
+                  <td>keyup</td>
+                  <td>focus</td>
+                  <td>scroll</td>
+                </tr>
+                <tr>
+                  <td>mouseleave</td>
+                  <td></td>
+                  <td>blur</td>
+                  <td>unload</td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="general">
+            <h2>jQuery Syntax For Event Methods</h2>
+            <p>In jQuery, most DOM events have an equivalent jQuery method.</p>
+            <p>To assign a click event to all paragraphs on a page, you can do this: </p>
+            <div class="example">
+              <div class="egcontent">
+                <p>$("p").click(); </p>
+              </div>
+            </div>
+            <p>The next step is to define what should happen when the event fires. You must pass a function to the event:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>$("p").click(function(){</p><p>
+  // action goes here!!</p><p>
+}); </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="general">
+            <h2>Commonly Used jQuery Event Methods</h2>
+            <h3>$(document).ready()</h3>
+            <p>The <span class="imp">$(document).ready()</span> method allows us to execute a function when the document is fully loaded. This event is already explained in the jQuery Syntax chapter.</p>
+            <h3>click()</h3>
+            <p>The <span class="imp">click()</span> method attaches an event handler function to an HTML element.</p>
+            <p>The function is executed when the user clicks on the HTML element.</p>
+            <p>The following example says: When a click event fires on a <p> element; hide the current <p> element:</p>
+
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$("p").click(function(){</p><p>
+  $(this).hide();</p><p>
+});</p>
+              </div>
+            </div>
+            <h3>dblclick()</h3>
+            <p>The <span class="imp">dblclick()</span> method attaches an event handler function to an HTML element.</p>
+            <p>The function is executed when the user double-clicks on the HTML element:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$("p").dblclick(function(){</p><p>
+  $(this).hide();</p><p>
+});</p>
+              </div>
+            </div>
+            <h3>mouseenter()</h3>
+            <p>The <span class="imp">mouseenter()</span> method attaches an event handler function to an HTML element.</p>
+            <p>The function is executed when the mouse pointer enters the HTML element:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$("#p1").mouseenter(function(){</p><p>
+  alert("You entered p1!");</p><p>
+});</p>
+              </div>
+            </div>
+            <h3>mouseleave()</h3>
+            <p>The <span class="imp">mouseleave()</span> method attaches an event handler function to an HTML element.</p>
+            <p>The function is executed when the mouse pointer leaves the HTML element:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$("#p1").mouseleave(function(){</p><p>
+  alert("Bye! You now leave p1!");</p><p>
+});</p>
+              </div>
+            </div>
+            <h3>mousedown()</h3>
+            <p>The <span class="imp">mousedown()</span> method attaches an event handler function to an HTML element.</p>
+            <p>The function is executed, when the left, middle or right mouse button is pressed down, while the mouse is over the HTML element:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$("#p1").mousedown(function(){</p><p>
+  alert("Mouse down over p1!");</p><p>
+});</p>
+              </div>
+            </div>
+            <h3>mouseup()</h3>
+            <p>The <span class="imp">mouseup()</span> method attaches an event handler function to an HTML element.</p>
+            <p>The function is executed, when the left, middle or right mouse button is released, while the mouse is over the HTML element:</p>
+
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$("#p1").mouseup(function(){</p><p>
+  alert("Mouse up over p1!");</p><p>
+});</p>
+              </div>
+            </div>
+            <h3>hover()</h3>
+            <p>The <span class="imp">hover()</span> method takes two functions and is a combination of the <span class="imp">mouseenter()</span> and <span class="imp">mouseleave()</span> methods.</p>
+            <p>The first function is executed when the mouse enters the HTML element, and the second function is executed when the mouse leaves the HTML element:</p>
+
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$("#p1").hover(function(){</p><p>
+  alert("You entered p1!");</p><p>
+},</p><p>
+function(){</p><p>
+  alert("Bye! You now leave p1!");</p><p>
+});</p>
+              </div>
+            </div>
+            <h3>focus()</h3>
+            <p>The <span class="imp">focus()</span> method attaches an event handler function to an HTML form field.</p>
+            <p>The function is executed when the form field gets focus:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$("input").focus(function(){</p><p>
+  $(this).css("background-color", "#cccccc");</p><p>
+});</p>
+              </div>
+            </div>
+            <h3>blur()</h3>
+            <p>The <span class="imp">blur()</span> method attaches an event handler function to an HTML form field.</p>
+            <p>The function is executed when the form field loses focus:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$("input").blur(function(){</p><p>
+  $(this).css("background-color", "#ffffff");</p><p>
+});</p>
+              </div>
+            </div>
+            <h3>The on() Method</h3>
+            <p>The <span class="imp">on()</span> method attaches one or more event handlers for the selected elements.</p>
+            <p>Attach a click event to a &lt;p&gt; element:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>$("p").on("click", function(){</p><p>
+  $(this).hide();</p><p>
+}); </p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="jquery_selectors.html">&lt; Previous</a>
+
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Glossary/jQuery">Mozilla jQuery</a>
+         <a href="https://www.w3schools.com/jquery/default.asp">w3schools jQuery</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

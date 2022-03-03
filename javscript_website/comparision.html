@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Comparison and Logical Operators</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a class="active" href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Comparison and Logical Operators</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="booleans.html"> < Previous </a>
+            <a class="rightbutton but" href="conditions.html">Next ></a>
+          </div>
+
+          <div class="general">
+            <p>Comparison and Logical operators are used to test for true or false.</p>
+          </div>
+          <div class="general">
+            <h2>Comparison Operators</h2>
+            <p>Comparison operators are used in logical statements to determine equality or difference between variables or values. </p>
+            <p>Given that <span class="imp">x = 5</span>, the table below explains the comparison operators:</p>
+            <div class="tab_div">
+              <table class="tab">
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Comparing</th>
+                  <th>Returns</th>
+                </tr>
+                <tr>
+                  <td rowspan="3">==</td>
+                  <td rowspan="3">equal to</td>
+                  <td>x == 8</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>x == 5</td>
+                  <td> 	true</td>
+                </tr>
+                <tr>
+
+                  <td>x == "5"</td>
+                  <td> 	true</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">===</td>
+                  <td rowspan="2">equal value and equal type</td>
+                  <td>x === 5</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+
+                  <td>x === "5"</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>!=</td>
+                  <td> 	not equal</td>
+                  <td>x != 8</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">!==</td>
+                  <td rowspan="3"> 	not equal value or not equal type</td>
+                  <td>x !== 5</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>x !== "5" 	</td>
+                  <td>true</td>
+
+                </tr>
+                <tr>
+                  <td>x !== 8</td>
+                  <td>true</td>
+
+                </tr>
+                <tr>
+                  <td>&gt;</td>
+                  <td>greater than</td>
+                  <td> 	x &gt; 8</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>&lt;</td>
+                  <td> 	less than</td>
+                  <td>x &lt; 8</td>
+                  <td> 	true</td>
+                </tr>
+                <tr>
+                  <td>&gt;=</td>
+                  <td>greater than or equal to</td>
+                  <td>x &gt;= 8</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>&lt;=</td>
+                  <td>less than or equal to</td>
+                  <td>x &lt;= 8</td>
+                  <td>true</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>How Can it be Used</h2>
+            <p>Comparison operators can be used in conditional statements to compare values and take action depending on the result:</p>
+            <div class="example">
+
+              <div class="egcontent">
+                <p>if (age < 18) text = "Too young to buy alcohol";</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>Logical Operators</h2>
+            <p>Logical operators are used to determine the logic between variables or values.</p>
+            <p>Given that <span class="imp">x = 6</span> and <span class="imp">y = 3</span>, the table below explains the logical operators: </p>
+            <div class="tab_div">
+              <table class="tab">
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>&&</td>
+                  <td>and</td>
+                  <td>(x &lt; 10 && y &gt; 1) is true</td>
+                </tr>
+                <tr>
+                  <td>||</td>
+                  <td>or</td>
+                  <td> 	(x == 5 || y == 5) is false</td>
+                </tr>
+                <tr>
+                  <td>!</td>
+                  <td> 	not</td>
+                  <td>!(x == y) is true</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="booleans.html"> < Previous </a>
+            <a class="rightbutton but" href="conditions.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

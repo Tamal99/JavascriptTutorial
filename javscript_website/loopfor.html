@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript For Loop</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a class="active" href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript For Loop</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="switch.html"> < Previous </a>
+            <a class="rightbutton but" href="loopwhile.html">Next ></a>
+          </div>
+
+          <div class="general">
+            <p>Loops can execute a block of code a number of times.</p>
+          </div>
+
+          <div class="general">
+            <h2>JavaScript Loops</h2>
+            <p>Loops are handy, if you want to run the same code over and over again, each time with a different value.</p><p>
+
+Often this is the case when working with arrays:</p>
+            <div class="example">
+              <h3>Instead of writing:</h3>
+              <div class="egcontent">
+                <p>text += cars[0] + "<br>";</p><p>
+text += cars[1] + "<br>";</p><p>
+text += cars[2] + "<br>";</p><p>
+text += cars[3] + "<br>";</p><p>
+text += cars[4] + "<br>";</p><p>
+text += cars[5] + "<br>";</p>
+              </div>
+              <p>You can write:</p>
+              <div class="egcontent">
+                <p>var i;</p><p>
+for (i = 0; i < cars.length; i++) {</p><p>
+  text += cars[i] + "<br>";</p><p>
+} </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>The For Loop</h2>
+            <p></p>
+            <div class="example">
+              <h3>The <span class="imp">for</span> loop has the following syntax:</h3>
+              <div class="egcontent">
+                <p>for (statement 1; statement 2; statement 3) {</p><p>
+  // code block to be executed</p><p>
+}</p>
+              </div>
+            </div>
+            <p>Statement 1 is executed (one time) before the execution of the code block.</p><p>
+
+Statement 2 defines the condition for executing the code block.</p><p>
+
+Statement 3 is executed (every time) after the code block has been executed.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>for (i = 0; i < 5; i++) {</p><p>
+  text += "The number is " + i + "&lt;br&gt;";</p><p>
+}</p>
+              </div>
+            </div>
+            <p>From the example above, you can read:</p><p>
+
+Statement 1 sets a variable before the loop starts (var i = 0).</p><p>
+
+Statement 2 defines the condition for the loop to run (i must be less than 5).</p><p>
+
+Statement 3 increases a value (i++) each time the code block in the loop has been executed.</p>
+          </div>
+          <div class="general">
+            <h2>Statement 1</h2>
+            <p>Normally you will use statement 1 to initialize the variable used in the loop (i = 0).</p><p>
+
+This is not always the case, JavaScript doesn't care. Statement 1 is optional.</p><p>
+
+You can initiate many values in statement 1 (separated by comma):</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>for (i = 0, len = cars.length, text = ""; i < len; i++) { </p>
+                  <p>text += cars[i] + "<br>";</p>
+                  <p>}</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Statement 2</h2>
+            <p>Often statement 2 is used to evaluate the condition of the initial variable.</p><p>
+
+This is not always the case, JavaScript doesn't care. Statement 2 is also optional.</p><p>
+
+If statement 2 returns true, the loop will start over again, if it returns false, the loop will end.</p>
+<div class="highlight">
+  <p>If you omit statement 2, you must provide a break inside the loop. Otherwise the loop will never end. This will crash your browser. </p>
+</div>
+</div>
+          <div class="general">
+            <h2>Statement 3</h2>
+            <p>Often statement 3 increments the value of the initial variable.</p><p>
+
+This is not always the case, JavaScript doesn't care, and statement 3 is optional.</p><p>
+
+Statement 3 can do anything like negative increment (i--), positive increment (i = i + 15), or anything else.</p><p>
+
+Statement 3 can also be omitted (like when you increment your values inside the loop): </p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var i = 0;</p><p>
+var len = cars.length;</p><p>
+for (; i < len; ) {</p><p>
+  text += cars[i] + "&lt;br&gt;";</p><p>
+  i++;
+} </p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="switch.html"> < Previous </a>
+            <a class="rightbutton but" href="loopwhile.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

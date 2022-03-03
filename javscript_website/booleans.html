@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Booleans</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a class="active" href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Booleans</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="math.html"> < Previous </a>
+            <a class="rightbutton but" href="comparision.html">Next ></a>
+          </div>
+
+
+
+
+          <div class="general">
+            <p>A JavaScript Boolean represents one of two values: true or false.</p>
+          </div>
+
+          <div class="general">
+            <h2>Boolean Values</h2>
+            <p>Very often, in programming, you will need a data type that can only have one of two values, like</p>
+            <ul>
+              <li>YES / NO</li>
+              <li>ON / OFF</li>
+              <li>TRUE / FALSE</li>
+            </ul>
+            <p>For this, JavaScript has a Boolean data type. It can only take the values true or false.</p>
+
+          </div>
+
+          <div class="general">
+            <h2>The Boolean() Function</h2>
+            <p>You can use the <span class="imp">Boolean()</span> function to find out if an expression (or a variable) is true:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>Boolean(10 > 9)        // returns true </p>
+              </div>
+            </div>
+            <p>Or even easier:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>(10 > 9)              // also returns true</p>
+                <p>10 > 9                // also returns true </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>Comparisons and Conditions</h2>
+            <p>The chapter JS Comparisons gives a full overview of comparison operators.</p><p>
+
+The chapter JS Conditions gives a full overview of conditional statements.</p><p>
+
+Here are some examples:</p>
+            <div class="tab_div">
+              <table class="tab">
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>==</td>
+                  <td>equal to</td>
+                  <td>if (day == "Monday")</td>
+                </tr>
+                <tr>
+                  <td>&gt;</td>
+                  <td>greater than</td>
+                  <td>if (salary &gt; 9000)</td>
+                </tr>
+                <tr>
+                  <td>&lt;</td>
+                  <td>less than</td>
+                  <td> 	if (age &lt; 18)</td>
+                </tr>
+
+              </table>
+            </div>
+            <p>The Boolean value of an expression is the basis for all JavaScript comparisons and conditions.</p>
+
+          </div>
+
+          <div class="general">
+            <h2>Everything With a "Value" is True</h2>
+
+            <div class="example">
+              <h3>Examples</h3>
+              <div class="egcontent">
+                <p>100</p><p>
+
+3.14</p><p>
+
+-15</p><p>
+
+"Hello"</p><p>
+
+"false"</p><p>
+
+7 + 1 + 3.14</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>Everything Without a "Value" is False</h2>
+
+            <div class="example">
+              <h3>The Boolean value of 0 (zero) is false:</h3>
+              <div class="egcontent">
+                <p>var x = 0;</p>
+                <p>Boolean(x);       // returns false </p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>The Boolean value of -0 (minus zero) is false:</h3>
+              <div class="egcontent">
+                <p>var x = -0;</p>
+                <p>Boolean(x);       // returns false </p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>The Boolean value of "" (empty string) is false:</h3>
+              <div class="egcontent">
+                <p>var x = "";</p>
+                <p>Boolean(x);       // returns false</p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>The Boolean value of undefined is false:</h3>
+              <div class="egcontent">
+                <p> var x;</p><p>
+Boolean(x);       // returns false </p>
+              </div>
+            </div>
+            <div class="example">
+              <h3>The Boolean value of null is false:</h3>
+              <div class="egcontent">
+                <p>var x = null;</p><p>
+Boolean(x);       // returns false </p>
+              </div>
+            </div>
+            <div class="example">
+              <h3>The Boolean value of false is (you guessed it) false:</h3>
+              <div class="egcontent">
+                <p> var x = false;</p><p>
+Boolean(x);       // returns false </p>
+              </div>
+            </div>
+
+            <div class="example">
+              <h3>The Boolean value of NaN is false:</h3>
+              <div class="egcontent">
+                <p>var x = 10 / "H";</p><p>
+Boolean(x);       // returns false</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>Booleans Can be Objects</h2>
+            <p>Normally JavaScript booleans are primitive values created from literals:</p>
+            <p><span class="imp">var x = false;</span> </p>
+            <p>But booleans can also be defined as objects with the keyword <span class="imp">new</span>:</p>
+            <p><span class="imp">var y = new Boolean(false);</span> </p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = false;</p><p>
+var y = new Boolean(false);</p><p>
+
+// typeof x returns boolean</p><p>
+// typeof y returns object</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Do not create Boolean objects. It slows down execution speed.</p><p>
+The new keyword complicates the code. This can produce some unexpected results:</p>
+<p>When using the == operator, equal booleans are equal:</p>
+
+            </div>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p> var x = false;          </p><p>
+var y = new Boolean(false);</p><p>
+
+// (x == y) is true because x and y have equal values </p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="math.html"> < Previous </a>
+            <a class="rightbutton but" href="comparision.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

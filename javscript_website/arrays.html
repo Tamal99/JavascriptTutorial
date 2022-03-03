@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Arrays</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a class="active" href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+          
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Arrays</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="numbers.html"> < Previous </a>
+            <a class="rightbutton but" href="arraysmethods.html">Next ></a>
+          </div>
+
+          <div class="general">
+            <p>JavaScript arrays are used to store multiple values in a single variable.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var cars = ["Saab", "Volvo", "BMW"];</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>What is an Array?</h2>
+            <p>An array is a special variable, which can hold more than one value at a time.</p>
+            <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+            <div class="highlight">
+              <p>var car1 = "Saab";</p>
+              var car2 = "Volvo";</p><p>
+                var car3 = "BMW"; </p>
+            </div>
+            <p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+            <p>The solution is an array!</p>
+            <p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+
+          </div>
+          <div class="general">
+            <h2>Creating an Array</h2>
+            <p>Using an array literal is the easiest way to create a JavaScript Array.
+
+            </p><p>Syntax: </p>
+            <div class="example">
+
+              <div class="egcontent">
+                <p>var array_name = [item1, item2, ...]; </p>
+              </div>
+            </div>
+            <p>Spaces and line breaks are not important. A declaration can span multiple lines.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var cars = [</p>
+                <p>"Saab",</p>
+                <p>"Volvo",</p>
+                <p>"BMW"</p>
+                <p>]; </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Access the Elements of an Array</h2>
+            <p>You access an array element by referring to the index number.</p>
+            <div class="example">
+
+              <div class="egcontent">
+                <p>var name = cars[0];</p>
+              </div>
+              <div class="egcontent">
+                <p>var cars = ["Saab", "Volvo", "BMW"];</p><p>
+document.getElementById("demo").innerHTML = cars[0];</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Note: Array indexes start with 0.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Changing an Array Element</h2>
+            <p>This statement changes the value of the first element in cars:</p>
+            <div class="example">
+
+              <div class="egcontent">
+                <p>cars[0] = "Opel";</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Access the Full Array</h2>
+            <p>With JavaScript, the full array can be accessed by referring to the array name:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var cars = ["Saab", "Volvo", "BMW"];</p>
+                <p>document.getElementById("demo").innerHTML = cars;</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Arrays are Objects</h2>
+            <p>Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
+
+            </p><p>But, JavaScript arrays are best described as arrays.</p>
+            <p>Arrays use numbers to access its "elements".</p>
+            <p>Objects use names to access its "members".</p>
+          </div>
+          <div class="general">
+            <h2>The length Property</h2>
+            <p>The length property of an array returns the length of an array (the number of array elements).</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>fruits.length;   // the length of fruits is 4 </p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>The length property is always one more than the highest array index.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Looping Array Elements</h2>
+            <p>The safest way to loop through an array, is using a for loop:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits, text, fLen, i;</p><p>
+                  fruits = ["Banana", "Orange", "Apple", "Mango"];</p><p>
+                    fLen = fruits.length;</p>
+                    <p>
+                      text = "&ltul&gt";</p><p>
+                        for (i = 0; i &lt fLen; i++) {</p><p>
+                          text += "&ltli&gt" + fruits[i] + "&ltli&gt";</p><p>
+                          }</p>
+                          <p>text += "&lt/ul&gt";</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Adding Array Elements</h2>
+            <p>The easiest way to add a new element to an array is using the push() method:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>fruits.push("Lemon");    // adds a new element (Lemon) to fruits </p>
+              </div>
+            </div>
+            <p>New element can also be added to an array using the length property:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+                <p>fruits[fruits.length] = "Lemon";    // adds a new element (Lemon) to fruits</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Associative Arrays</h2>
+            <p>Arrays with named indexes are called associative arrays (or hashes).</p>
+            <p>JavaScript does not support arrays with named indexes.</p>
+          </div>
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="numbers.html"> < Previous </a>
+            <a class="rightbutton but" href="arraysmethods.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

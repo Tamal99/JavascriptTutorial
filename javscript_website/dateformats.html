@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Date Formats</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a class="active" href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Date Formats</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="dates.html"> < Previous </a>
+            <a class="rightbutton but" href="dategetmethods.html">Next ></a>
+          </div>
+
+
+          <div class="general">
+            <h2>JavaScript Date Input</h2>
+            <p>There are generally 3 types of JavaScript date input formats:</p>
+            <div class="tab_div">
+              <table class="tab">
+                <tr>
+                  <th>Type</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td>ISO Date</td>
+                  <td> 	"2015-03-25" (The International Standard)</td>
+                </tr>
+                <tr>
+                  <td>Short Date</td>
+                  <td>"03/25/2015"</td>
+                </tr>
+                <tr>
+                  <td>Long Date</td>
+                  <td>"Mar 25 2015" or "25 Mar 2015"</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>JavaScript Date Output</h2>
+            <p>Independent of input format, JavaScript will (by default) output dates in full text string format:</p>
+            <div class="example">
+
+              <div class="egcontent">
+                <p>Wed Mar 25 2015 05:30:00 GMT+0530 (India Standard Time) </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>JavaScript ISO Dates</h2>
+            <p>ISO 8601 is the international standard for the representation of dates and times.</p>
+            <p>The ISO 8601 syntax (YYYY-MM-DD) is also the preferred JavaScript date format:</p>
+            <div class="example">
+              <h3>Example (Complete date)</h3>
+              <div class="egcontent">
+                <p>var d = new Date("2015-03-25");</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>The computed date will be relative to your time zone.</p><p>
+Depending on your time zone, the result above will vary between March 24 and March 25.</p>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>ISO Dates (Year and Month)</h2>
+            <p>ISO dates can be written without specifying the day (YYYY-MM):</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var d = new Date("2015-03");</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Time zones will vary the result above between February 28 and March 01.</p>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>ISO Dates (Only Year)</h2>
+            <p>ISO dates can be written without month and day (YYYY):</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var d = new Date("2015");</p>
+              </div>
+            </div>
+            <h2>ISO Dates (Date-Time)</h2>
+            <p>ISO dates can be written with added hours, minutes, and seconds (YYYY-MM-DDTHH:MM:SSZ):</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var d = new Date("2015-03-25T12:00:00Z");</p>
+              </div>
+            </div>
+            <p>Date and time is separated with a capital T.</p>
+            <p>UTC time is defined with a capital letter Z.</p>
+            <p>If you want to modify the time relative to UTC, remove the Z and add +HH:MM or -HH:MM instead: </p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var d = new Date("2015-03-25T12:00:00-06:30");</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>UTC (Universal Time Coordinated) is the same as GMT (Greenwich Mean Time)</p>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>Date Input - Parsing Dates</h2>
+            <p>If you have a valid date string, you can use the Date.parse() method to convert it to milliseconds.</p>
+            <p><span class="imp">Date.parse()</span> returns the number of milliseconds between the date and January 1, 1970:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var msec = Date.parse("March 21, 2012");</p><p>
+document.getElementById("demo").innerHTML = msec;</p>
+              </div>
+            </div>
+            <p>You can then use the number of milliseconds to convert it to a date object:</p>
+            <div class="example">
+              <h3></h3>
+              <div class="egcontent">
+                <p>var msec = Date.parse("March 21, 2012");</p><p>
+var d = new Date(msec);</p><p>
+document.getElementById("demo").innerHTML = d;</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>Time Zones</h2>
+            <p>When setting a date, without specifying the time zone, JavaScript will use the browser's time zone.</p>
+            <p>When getting a date, without specifying the time zone, the result is converted to the browser's time zone.</p>
+            <p>In other words: If a date/time is created in GMT (Greenwich Mean Time), the date/time will be converted to CDT (Central US Daylight Time) if a user browses from central US.</p>
+
+          </div>
+
+          <div class="general">
+            <h2>JavaScript Short Dates.</h2>
+            <p>Short dates are written with an "MM/DD/YYYY" syntax like this:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var d = new Date("03/25/2015");</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="dates.html"> < Previous </a>
+            <a class="rightbutton but" href="dategetmethods.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Data Types</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a class="active" href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Data Types</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="assignment.html"> < Previous </a>
+            <a class="rightbutton but" href="functions.html">Next ></a>
+          </div>
+
+          <div class="general">
+            <p>JavaScript variables can hold many data types: numbers, strings, objects and more:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>var length = 16;                               // Number</p>
+                <p>var lastName = "Johnson";                      // String</p>
+                <p>var x = {firstName:"John", lastName:"Doe"};    // Object</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>The Concept of Data Types</h2>
+            <p>In programming, data types is an important concept.</p>
+            <p>To be able to operate on variables, it is important to know something about the type.</p>
+            <p>Without data types, a computer cannot safely solve this:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>var x = 16 + "Volvo"; </p>
+              </div>
+            </div>
+            <p>JavaScript will treat the example above as:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>var x = "16" + "Volvo"; </p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+            </div>
+            <p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+            <div class="example">
+              <h3>JavaScript:</h3>
+              <div class="egcontent">
+                <p>var x = 16 + 4 + "Volvo";</p>
+              </div>
+              <p>Result:</p>
+              <div class="egcontent">
+                <p>20Volvo</p>
+              </div>
+            </div>
+            <div class="example">
+              <h3>JavaScript:</h3>
+              <div class="egcontent">
+                <p>var x = "Volvo" + 16 + 4;</p>
+              </div>
+              <p>Result:</p>
+              <div class="egcontent">
+                <p>Volvo164</p>
+              </div>
+            </div>
+            <p>In the first example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo".</p>
+            <p>In the second example, since the first operand is a string, all operands are treated as strings.</p>
+          </div>
+          <div class="general">
+            <h2>JavaScript Types are Dynamic</h2>
+            <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x; // Now x is undefined</p>
+                <p>x = 5;           // Now x is a Number</p>
+                <p>x = "John";      // Now x is a String</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Strings</h2>
+            <p>A string (or a text string) is a series of characters like "John Doe".</p>
+            <p>Strings are written with quotes. You can use single or double quotes:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var carName1 = "Volvo XC60";   // Using double quotes</p>
+                <p>var carName2 = 'Volvo XC60';   // Using single quotes </p>
+              </div>
+            </div>
+            <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var answer1 = "It's alright";             // Single quote inside double quotes</p>
+                <p>var answer2 = "He is called 'Johnny'";    // Single quotes inside double quotes</p>
+                <p>var answer3 = 'He is called "Johnny"';    // Double quotes inside single quotes </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Numbers</h2>
+            <p>JavaScript has only one type of numbers.</p>
+            <p>Numbers can be written with, or without decimals:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x1 = 34.00;     // Written with decimals</p>
+                <p>var x2 = 34;        // Written without decimals </p>
+              </div>
+            </div>
+            <p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var y = 123e5;      // 12300000</p>
+                <p>var z = 123e-5;     // 0.00123</p>
+              </div>
+            </div>
+            <p>You will learn more about numbers later in this tutorial.</p>
+          </div>
+          <div class="general">
+            <h2>JavaScript Booleans</h2>
+            <p>Booleans can only have two values: true or false.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var x = 5;</p>
+                <p>var y = 5;</p>
+                <p>var z = 6;</p>
+                <p>(x == y)       // Returns true</p>
+                <p>(x == z)       // Returns false</p>
+              </div>
+            </div>
+            <p>Booleans are often used in conditional testing.</p>
+          </div>
+          <div class="general">
+            <h2>JavaScript Arrays</h2>
+            <p>JavaScript arrays are written with square brackets.</p>
+            <p>Array items are separated by commas.</p>
+            <p>The following code declares (creates) an array called cars, containing three items (car names):</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var cars = ["Saab", "Volvo", "BMW"];</p>
+              </div>
+            </div>
+            <p>Array indexes are zero-based, which means the first item is [0], second is [1], and so on.</p>
+          </div>
+          <div class="general">
+            <h2>JavaScript Objects</h2>
+            <p>JavaScript objects are written with curly braces {}.</p>
+            <p>Object properties are written as name:value pairs, separated by commas.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</p>
+              </div>
+            </div>
+            <p>The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.</p>
+          </div>
+          <div class="general">
+            <h2>The typeof Operator</h2>
+            <p>You can use the JavaScript typeof operator to find the type of a JavaScript variable.</p>
+            <p>The typeof operator returns the type of a variable or an expression:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>typeof ""             // Returns "string"</p>
+                <p>typeof "John"         // Returns "string"</p>
+                <p>typeof "John Doe"     // Returns "string" </p>
+              </div>
+            </div>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>typeof 0              // Returns "number"</p>
+                <p>typeof 314            // Returns "number"</p>
+                <p>typeof 3.14           // Returns "number"</p>
+                <p>typeof (3)            // Returns "number"</p>
+                <p>typeof (3 + 4)        // Returns "number" </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Undefined</h2>
+            <p>In JavaScript, a variable without a value, has the value undefined. The type is also undefined.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var car;    // Value is undefined, type is undefined </p>
+              </div>
+            </div>
+            <p>Any variable can be emptied, by setting the value to undefined. The type will also be undefined.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>car = undefined;    // Value is undefined, type is undefined</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Empty Values </h2>
+            <p>An empty value has nothing to do with undefined.</p>
+            <p>An empty string has both a legal value and a type.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var car = "";    // The value is "", the typeof is "string"</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Null</h2>
+            <p>In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+Unfortunately, in JavaScript, the data type of null is an object.</p>
+            <p>You can empty an object by setting it to null:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</p>
+                <p>person = null;    // Now value is null, but type is still an object</p>
+              </div>
+            </div>
+            <p>You can also empty an object by setting it to undefined:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</p>
+                <p>person = undefined;   // Now both value and type is undefined</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Difference Between Undefined and Null</h2>
+            <p>undefined and null are equal in value but different in type:</p>
+            <div class="example">
+              <h3></h3>
+              <div class="egcontent">
+                <p>typeof undefined           // undefined</p>
+                <p>typeof null                // object</p>
+                <p>null === undefined         // false</p>
+                <p>null == undefined          // true </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Primitive Data</h2>
+            <p>A primitive data value is a single simple data value with no additional properties and methods.</p>
+            <p>The <span class="imp">typeof</span> operator can return one of these primitive types:</p>
+            <div class="highlight">
+              <ul class="imp">
+                <li>string</li>
+                <li>number</li>
+                <li>boolean</li>
+                <li>undefined</li>
+              </ul>
+            </div>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>typeof "John"              // Returns "string" </p>
+                <p>typeof 3.14                // Returns "number"</p>
+                <p>typeof true                // Returns "boolean"</p>
+                <p>typeof false               // Returns "boolean"</p>
+                <p>typeof x                   // Returns "undefined" (if x has no value) </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Complex Data</h2>
+            <p>The <span class="imp">typeof</span> operator can return one of two complex types:</p>
+            <div class="highlight">
+              <ul class="imp">
+                <li>function</li>
+                <li>object</li>
+              </ul>
+            </div>
+            <p>The typeof operator returns "object" for objects, arrays, and null.</p>
+            <p>The typeof operator does not return "object" for functions.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>typeof {name:'John', age:34} // Returns "object"</p>
+                <p>typeof [1,2,3,4]             // Returns "object" (not "array", see note below)</p>
+                <p>typeof null                  // Returns "object"</p>
+                <p>typeof function myFunc(){}   // Returns "function"</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="assignment.html"> < Previous </a>
+            <a class="rightbutton but" href="functions.html">Next ></a>
+          </div>
+
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

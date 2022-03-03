@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Statements</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a class="active" href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+    
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Statements</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="whereto.html"> < Previous </a>
+            <a class="rightbutton but" href="syntax.html">Next ></a>
+          </div>
+
+          <div class="example">
+            <h3>Example</h3>
+            <div class="egcontent">
+              <p>var x, y, z;    // Statement 1</p>
+              <p>x = 5;          // Statement 2</p>
+              <p>y = 6;          // Statement 3</p>
+              <p>z = x + y;      // Statement 4</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Programs</h2>
+            <p>A computer program is a list of "instructions" to be "executed" by a computer.</p>
+            <p>  In a programming language, these programming instructions are called statements.</p>
+            <p>A JavaScript program is a list of programming statements.</p>
+            <div class="highlight">
+              <p>In HTML, JavaScript programs are executed by the web browser.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Statements</h2>
+            <p>JavaScript statements are composed of:</p>
+            <p>Values, Operators, Expressions, Keywords, and Comments.</p>
+            <p>This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>document.getElementById("demo").innerHTML = "Hello Dolly."; </p>
+              </div>
+            </div>
+            <p>Most JavaScript programs contain many JavaScript statements.</p>
+            <p>The statements are executed, one by one, in the same order as they are written.</p>
+          </div>
+          <div class="general">
+            <h2>Semicolons ;</h2>
+            <p>Semicolons separate JavaScript statements.</p>
+            <p>Add a semicolon at the end of each executable statement: </p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var a, b, c;</p>
+                <p>a = 5;</p>
+                <p>b = 6;</p>
+                <p>c = a + b;  </p>
+              </div>
+            </div>
+            <p>When separated by semicolons, multiple statements on one line are allowed:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>a = 5; b = 6; c = a + b;</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Ending statements with semicolon is not required, but highly recommended.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript White Space</h2>
+            <p>JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.</p>
+            <p>The following lines are equivalent:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>var person = "Hege";</p>
+                <p>var person="Hege";</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Line Length and Line Breaks</h2>
+            <p>For best readability, programmers often like to avoid code lines longer than 80 characters.</p>
+            <p>If a JavaScript statement does not fit on one line, the best place to break it is after an operator:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>document.getElementById("demo").innerHTML =</p>
+                  <p>"Hello Dolly!"; </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Code Blocks</h2>
+            <p>JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.</p>
+            <p>The purpose of code blocks is to define statements to be executed together.</p>
+            <p>One place you will find statements grouped together in blocks, is in JavaScript functions:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>function myFunction() {</p>
+                  <p>  document.getElementById("demo1").innerHTML = "Hello Dolly!";</p>
+                  <p>  document.getElementById("demo2").innerHTML = "How are you?";</p>
+                  <p>}</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.</p>
+            </div>
+          </div>
+
+
+
+          <!--pagination-->
+          <div class="pagination">
+            <a class="leftbutton but" href="whereto.html"> < Previous </a>
+            <a class="rightbutton but" href="syntax.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

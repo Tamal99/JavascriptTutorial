@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript String Methods</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a class="active" href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+          
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript String Methods</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="strings.html"> < Previous </a>
+            <a class="rightbutton but" href="numbers.html">Next ></a>
+          </div>
+
+          <div class="general">
+            <h2>String Methods and Properties</h2>
+            <p>String methods help you to work with strings.</p>
+            <p>Primitive values, like "John Doe", cannot have properties or methods (because they are not objects). </p>
+            <p>But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.</p>
+          </div>
+          <div class="general">
+            <h2>String Length</h2>
+            <p>The <span class="imp">length</span> property returns the length of a string:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";</p>
+                <p>var sln = txt.length; </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Finding a String in a String</h2>
+            <p>The <span class="imp">indexOf()</span> method returns the index of (the position of) the first occurrence of a specified text in a string:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var str = "Please locate where 'locate' occurs!";</p>
+                <p>var pos = str.indexOf("locate");</p>
+              </div>
+              <p>Output</p>
+              <div class="egcontent">
+                <p>7</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>JavaScript counts positions from zero.
+0 is the first position in a string, 1 is the second, 2 is the third ...</p>
+            </div>
+            <p>The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var str = "Please locate where 'locate' occurs!";</p>
+                <p>var pos = str.lastIndexOf("locate");</p>
+              </div>
+              <p>Output</p>
+              <div class="egcontent">
+                <p>21</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Both indexOf(), and lastIndexOf() return -1 if the text is not found.</p>
+            </div>
+            <p>Both methods accept a second parameter as the starting position for the search:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var str = "Please locate where 'locate' occurs!";</p>
+                <p>var pos = str.indexOf("locate", 15);</p>
+              </div>
+            </div>
+            <p>The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var str = "Please locate where 'locate' occurs!";</p>
+                <p>var pos = str.lastIndexOf("locate", 15);</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Searching for a String in a String</h2>
+            <p>The <span class="imp">search()</span> method searches a string for a specified value and returns the position of the match:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var str = "Please locate where 'locate' occurs!";</p>
+                <p>var pos = str.search("locate");</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Extracting String Parts</h2>
+            <p>There are 3 methods for extracting a part of a string:</p>
+            <div class="highlight">
+              <ul class="imp">
+                <li>slice(start, end)</li>
+                <li>substring(start, end)</li>
+                <li>substr(start, length)</li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="general">
+            <h2>The slice() Method</h2>
+            <p><span class="imp">slice()</span> extracts a part of a string and returns the extracted part in a new string.</p>
+            <p>The method takes 2 parameters: the start position, and the end position (end not included).</p>
+            <p>This example slices out a portion of a string from position 7 to position 12 (13-1):</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var str = "Apple, Banana, Kiwi";</p>
+                <p>var res = str.slice(7, 13);</p>
+              </div>
+              <p>The result of res will be:</p>
+              <div class="egcontent">
+                <p>Banana</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Remember: JavaScript counts positions from zero. First position is 0.</p>
+            </div>
+            <p>If a parameter is negative, the position is counted from the end of the string.</p>
+            <p>This example slices out a portion of a string from position -12 to position -6: </p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var str = "Apple, Banana, Kiwi";</p>
+                <p>var res = str.slice(-12, -6);</p>
+              </div>
+              <p>The result of res will be:</p>
+              <div class="egcontent">
+                <p>Banana</p>
+              </div>
+            </div>
+            <p>If you omit the second parameter, the method will slice out the rest of the string:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var res = str.slice(7);</p>
+              </div>
+            </div>
+            <p>or, counting from the end:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var res = str.slice(-12);</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>The substring() Method</h2>
+            <p><span class="imp">substring()</span> is similar to <span class="imp">slice()</span>.</p>
+            <p>The difference is that <span class="imp">substring()</span> cannot accept negative indexes.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var str = "Apple, Banana, Kiwi";</p>
+                <p>var res = str.substring(7, 13);</p>
+              </div>
+              <p>The result of res will be:</p>
+              <div class="egcontent">
+                <p>Banana</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>If you omit the second parameter, substring() will slice out the rest of the string.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>The substr() Method</h2>
+            <p><span class="imp">substr()</span> is similar to <span class="imp">slice()</span></p>
+            <p>The difference is that the second parameter specifies the length of the extracted part.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var str = "Apple, Banana, Kiwi";</p>
+                <p>var res = str.substr(7, 6);</p>
+              </div>
+              <p>The result of res will be:</p>
+              <div class="egcontent">
+                <p>Banana</p>
+              </div>
+            </div>
+            <p>If you omit the second parameter, <span class="imp">substr()</span> will slice out the rest of the string.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var str = "Apple, Banana, Kiwi";</p>
+                <p>var res = str.substr(7);</p>
+              </div>
+              <p>The result of res will be:</p>
+              <div class="egcontent">
+                <p>Banana, Kiwi</p>
+              </div>
+            </div>
+            <p>If the first parameter is negative, the position counts from the end of the string.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var str = "Apple, Banana, Kiwi";</p>
+                <p>var res = str.substr(-4);</p>
+              </div>
+              <p>The result of res will be:</p>
+              <div class="egcontent">
+                <p>Kiwi</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Replacing String Content</h2>
+            <p>The <span class="imp">replace()</span> method replaces a specified value with another value in a string:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>str = "Please visit Microsoft!";</p>
+                <p>var n = str.replace("Microsoft", "W3Schools");</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>The <span class="highlight">replace()</span> method does not change the string it is called on. It returns a new string.</p>
+            </div>
+            <p>By default, the <span class="imp">replace()</span> method replaces only the first match:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>str = "Please visit Microsoft and Microsoft!";</p>
+                <p>var n = str.replace("Microsoft", "W3Schools");</p>
+              </div>
+            </div>
+            <p>By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>str = "Please visit Microsoft!";</p>
+                <p>var n = str.replace("MICROSOFT", "W3Schools");</p>
+              </div>
+            </div>
+            <p>To replace case insensitive, use a regular expression with an <span class="imp">/i</span> flag (insensitive):</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>str = "Please visit Microsoft!";</p>
+                <p>var n = str.replace(/MICROSOFT/i, "W3Schools");</p>
+              </div>
+            </div>
+            <p>To replace all matches, use a regular expression with a <span class="imp">/g</span> flag (global match):</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>str = "Please visit Microsoft and Microsoft!";</p>
+                <p>var n = str.replace(/Microsoft/g, "W3Schools");</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Converting to Upper and Lower Case</h2>
+            <p>A string is converted to upper case with <span class="imp">toUpperCase()</span>:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var text1 = "Hello World!";       // String</p>
+                <p>var text2 = text1.toUpperCase();  // text2 is text1 converted to upper</p>
+              </div>
+            </div>
+            <p>A string is converted to lower case with <span class="imp">toLowerCase()</span>:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var text1 = "Hello World!";       // String</p>
+                <p>var text2 = text1.toLowerCase();  // text2 is text1 converted to lower</p>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="general">
+            <h2>The concat() Method</h2>
+            <p><span class="imp">concat()</span> joins two or more strings:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var text1 = "Hello";</p>
+                <p>var text2 = "World";</p>
+                <p>var text3 = text1.concat(" ", text2);</p>
+              </div>
+            </div>
+            <p>The <span class="imp">concat()</span> method can be used instead of the plus operator. These two lines do the same:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var text = "Hello" + " " + "World!";</p>
+                <p>var text = "Hello".concat(" ", "World!");</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>All string methods return a new string. They don't modify the original string.</p>
+            <p> Formally said: Strings are immutable: Strings cannot be changed, only replaced. </p>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="strings.html"> < Previous </a>
+            <a class="rightbutton but" href="numbers.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

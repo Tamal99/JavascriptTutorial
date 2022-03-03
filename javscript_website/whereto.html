@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Where To</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a class="active" href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Where To</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="intro.html"> < Previous </a>
+            <a class="rightbutton but" href="state.html">Next ></a>
+          </div>
+          <h2>The &lt;script&gt; Tag</h2>
+          <p>In HTML, JavaScript code is inserted between &lt;script&gt; and &lt;script&gt; tags.</p>
+          <div class="example">
+            <h3>Example</h3>
+            <div class="egcontent">
+
+              <p> &lt;script&gt;</p>
+              <p>document.getElementById("demo").innerHTML = "My First JavaScript";</p>
+              <p> &lt;script&gt;</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Functions and Events</h2>
+            <p>A JavaScript <span class="imp">function</span> is a block of JavaScript code, that can be executed when "called" for.</p>
+            <p>For example, a function can be called when an event occurs, like when the user clicks a button.</p>
+          </div>
+          <div class="general">
+            <h2>JavaScript in &lt;head&gt; or &lt;body&gt;</h2>
+            <p>You can place any number of scripts in an HTML document.</p>
+            <p>Scripts can be placed in the <span class="imp">&lt;body&gt;</span>, or in the <span class="imp">&lt;head&gt;</span> section of an HTML page, or in both.</p>
+          </div>
+          <div class="general">
+            <h2>JavaScript in &lt;head&gt;</h2>
+            <p>In this example, a JavaScript function is placed in the <span class="imp">&lt;head&gt;</span> section of an HTML page.</p>
+            <p>The function is invoked (called) when a button is clicked:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html&gt;</p>
+
+                <p>&lt;head&gt;</p>
+                <p>&lt;script&gt;</p>
+                <p>function myFunction() {</p>
+                <p>  document.getElementById("demo").innerHTML = "Paragraph changed.";</p>
+                <p>}</p>
+                <p>&lt;/script&gt;</p>
+                <p>&lt;/head&gt;</p>
+                <p>&lt;/body&gt;</p>
+
+                <p>&lt;h1&gt;A Web Page&lt;/h1&gt;</p>
+                <p>&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;</p>
+                <p>&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;</p>
+
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript in &lt;body&gt;</h2>
+            <p>In this example, a JavaScript <span class="imp">function </span>is placed in the &lt;body&gt; section of an HTML page.</p>
+            <p>The function is invoked (called) when a button is clicked:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+              <p>&lt;!DOCTYPE html&gt;</p>
+              <p>&lt;html&gt;</p>
+              <p>&lt;body&gt;</p>
+
+              <p>&lt;h1&gt;A Web Page&lt;/h1&gt;</p>
+              <p>&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;</p>
+              <p>&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;</p>
+              <p>&lt;script&gt;</p>
+              <p>function myFunction() {</p>
+                <p>document.getElementById("demo").innerHTML = "Paragraph changed.";}</p>
+
+              <p>&lt;/script&gt;</p>
+
+              <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>External JavaScript</h2>
+            <p>Scripts can also be placed in external files:</p>
+            <div class="example">
+              <h3>External file: myScript.js</h3>
+              <div class="egcontent">
+                <p>function myFunction() {</p>
+                <p>  document.getElementById("demo").innerHTML = "Paragraph changed.";</p>
+                <p>}</p>
+              </div>
+            </div>
+            <p>External scripts are practical when the same code is used in many different web pages. </p>
+            <p>JavaScript files have the file extension .js.</p>
+            <p>To use an external script, put the name of the script file in the <span class="imp">src</span> (source) attribute of a</p>
+            <p>&lt;script&gt; tag:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p> &lt;script src="myScript.js"&gt;&lt;/script&gt; </p>
+              </div>
+            </div>
+            <p>You can place an external script reference in &lt;head&gt; or &lt;body&gt; as you like.</p>
+            <p>The script will behave as if it was located exactly where the &lt;script&gt; tag is located.</p>
+            <div class="highlight">
+              <p>External scripts cannot contain &lt;script&gt; tags.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>External JavaScript Advantages</h2>
+            <p>Placing scripts in external files has some advantages:</p>
+            <div class="highlight">
+              <ul>
+                <li>It separates HTML and code</li>
+                <li>It makes HTML and JavaScript easier to read and maintain</li>
+                <li>Cached JavaScript files can speed up page loads</li>
+              </ul>
+            </div>
+            <p>To add several script files to one page  - use several script tags:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>&lt;script src="myScript2.js"&gt;&lt;/script&gt;</p>
+                <p>&lt;script src="myScript1.js"&gt;&lt;/script&gt;</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>External References</h2>
+            <p>External scripts can be referenced with a full URL or with a path relative to the current web page.</p>
+            <p>This example uses a full URL to link to a script:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p> &lt;script src="https://www.w3schools.com/js/myScript1.js"&gt;&lt;/script&gt; </p>
+              </div>
+            </div>
+            <p>This example uses a script located in a specified folder on the current web site:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p> &lt;script src="/js/myScript1.js"&gt;&lt;/script&gt;</p>
+              </div>
+            </div>
+            <p>This example links to a script located in the same folder as the current page:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>&lt;script src="myScript1.js"&gt;&lt;/script&gt;</p>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <a class="leftbutton but" href="intro.html"> < Previous </a>
+            <a class="rightbutton but" href="state.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

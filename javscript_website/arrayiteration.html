@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Array Iteration Methods</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a class="active" href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Array Iteration Methods</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="arraysmethods.html"> < Previous </a>
+            <a class="rightbutton but" href="dates.html">Next ></a>
+          </div>
+
+          <div class="general">
+            <h2>Array.forEach()</h2>
+            <p>The <span class="imp">forEach()</span> method calls a function (a callback function) once for each array element.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var txt = "";</p>
+                <p>var numbers = [45, 4, 9, 16, 25];</p>
+                <p>numbers.forEach(myFunction);</p>
+                <p>function myFunction(value, index, array) {</p>
+                  <p>txt = txt + value + "<br>"; </p>
+                  <p>}</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Array.map()</h2>
+            <p>The <span class="imp">map()</span> method creates a new array by performing a function on each array element</p>
+            <p>The <span class="imp">map()</span> method does not execute the function for array elements without values.</p>
+            <p>The map() method does not change the original array.</p>
+            <p>This example multiplies each array value by 2:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var numbers1 = [45, 4, 9, 16, 25];</p>
+                <p>var numbers2 = numbers1.map(myFunction);</p>
+                <p>function myFunction(value, index, array) {</p>
+                  <p>return value * 2;</p>
+                <p>}</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Array.filter()</h2>
+            <p>The <span class="imp">filter()</span> method creates a new array with array elements that passes a test</p>
+            <p>This example creates a new array from elements with a value larger than 18:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var numbers = [45, 4, 9, 16, 25];</p>
+                <p>var over18 = numbers.filter(myFunction);</p>
+                <p></p>
+                <p>function myFunction(value, index, array) {</p>
+                  <p>return value > 18;</p>
+                <p>} </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Array.reduce()</h2>
+            <p>The <span class="imp">reduce()</span> method runs a function on each array element to produce (reduce it to) a single value.</p>
+            <p>The <span class="imp">reduce()</span> method works from left-to-right in the array. See also <span class="imp">reduceRight()</span>.</p>
+            <p>This example finds the sum of all numbers in an array:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var numbers1 = [45, 4, 9, 16, 25];</p>
+                <p>var sum = numbers1.reduce(myFunction);</p>
+                <p>function myFunction(total, value, index, array) {</p>
+                <p> return total + value;</p>
+                <p>} </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Array.reduceRight()</h2>
+            <p>The <span class="imp">reduceRight()</span> method runs a function on each array element to produce (reduce it to) a single value.</p>
+            <p>The <span class="imp">reduceRight()</span> works from right-to-left in the array. See also reduce().</p>
+            <p>This example finds the sum of all numbers in an array:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var numbers1 = [45, 4, 9, 16, 25];</p>
+                <p>var sum = numbers1.reduceRight(myFunction);</p>
+                <p>function myFunction(total, value, index, array) {</p>
+                  <p> return total + value;</p>
+                  <p>} </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Array.every()</h2>
+            <p>The <span class="imp">every()</span> method check if all array values pass a test.</p>
+            <p>This example check if all array values are larger than 18:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var numbers = [45, 4, 9, 16, 25];</p>
+                <p>var allOver18 = numbers.every(myFunction);</p>
+                <p>function myFunction(value, index, array) {</p>
+                <p>return value > 18;</p>
+                <p>}</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Array.some()</h2>
+            <p>The <span class="imp">some()</span> method check if some array values pass a test.</p>
+            <p>This example check if some array values are larger than 18:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var numbers = [45, 4, 9, 16, 25];</p>
+                <p>var someOver18 = numbers.some(myFunction);</p>
+                <p>function myFunction(value, index, array) {</p>
+                  <p>return value > 18;</p>
+                  <p>} </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Array.indexOf()</h2>
+            <p>The <span class="imp">indexOf()</span> method searches an array for an element value and returns its position.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <p>Search an array for the item "Apple":</p>
+              <div class="egcontent">
+                <p>var fruits = ["Apple", "Orange", "Apple", "Mango"];</p>
+                <p>var a = fruits.indexOf("Apple");</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Array.lastIndexOf()</h2>
+            <p><span class="imp">Array.lastIndexOf()</span> is the same as <span class="imp">Array.lastIndexOf()</span>, but returns the position of the last occurrence of the specified element.</p>
+            <div class="example">
+              <h3>Example</h3>
+              <p>Search an array for the item "Apple":</p>
+              <div class="egcontent">
+                <p>var fruits = ["Apple", "Orange", "Apple", "Mango"];</p>
+                <p>var a = fruits.lastIndexOf("Apple");</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Array.find()</h2>
+            <p>The <span class="imp">find()</span> method returns the value of the first array element that passes a test function.</p>
+            <p>This example finds (returns the value of) the first element that is larger than 18:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var numbers = [4, 9, 16, 25, 29];</p>
+                <p>var first = numbers.find(myFunction);</p>
+                <p>function myFunction(value, index, array) {</p>
+                  <p> return value > 18;</p>
+                  <p>} </p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>Array.findIndex()</h2>
+            <p>The <span class="imp">findIndex()</span> method returns the index of the first array element that passes a test function.</p>
+            <p>This example finds the index of the first element that is larger than 18:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var numbers = [4, 9, 16, 25, 29];</p>
+                <p>var first = numbers.findIndex(myFunction);</p>
+                <p>function myFunction(value, index, array) {</p>
+                  <p>  return value > 18;</p>
+                  <p>} </p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="arraysmethods.html"> < Previous </a>
+            <a class="rightbutton but" href="dates.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

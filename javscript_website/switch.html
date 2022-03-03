@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Switch Statement</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a class="active" href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Switch Statement</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="conditions.html"> < Previous </a>
+            <a class="rightbutton but" href="loopfor.html">Next ></a>
+          </div>
+
+          <div class="general">
+            <p>The switch statement is used to perform different actions based on different conditions.</p>
+          </div>
+
+          <div class="general">
+            <h2>The JavaScript Switch Statement</h2>
+            <p>Use the switch statement to select one of many code blocks to be executed.</p>
+            <div class="example">
+              <h3>Syntax</h3>
+              <div class="egcontent">
+                <p>switch(expression) {</p><p>
+  case x:</p><p>
+    // code block</p><p>
+    break;</p><p>
+  case y:</p><p>
+    // code block</p><p>
+    break;</p><p>
+  default:</p><p>
+    // code block</p><p>
+} </p>
+              </div>
+            </div>
+            <p>This is how it works:</p>
+            <ul>
+              <li>The switch expression is evaluated once.</li>
+              <li>The value of the expression is compared with the values of each case.</li>
+              <li>If there is a match, the associated block of code is executed.</li>
+              <li>If there is no match, the default code block is executed.</li>
+            </ul>
+            <div class="example">
+              <h3>Example</h3>
+              <p>The <span class="imp">getDay()</span> method returns the weekday as a number between 0 and 6.</p>
+              <p>(Sunday=0, Monday=1, Tuesday=2 ..)</p>
+              <p>This example uses the weekday number to calculate the weekday name:</p>
+              <div class="egcontent">
+                <p>switch (new Date().getDay()) {</p><p>
+  case 0:</p><p>
+    day = "Sunday";</p><p>
+    break;</p><p>
+  case 1:</p><p>
+    day = "Monday";</p><p>
+    break;</p><p>
+  case 2:</p><p>
+     day = "Tuesday";</p><p>
+    break;</p><p>
+  case 3:</p><p>
+    day = "Wednesday";</p><p>
+    break;</p><p>
+  case 4:</p><p>
+    day = "Thursday";</p><p>
+    break;</p><p>
+  case 5:</p><p>
+    day = "Friday";</p><p>
+    break;</p><p>
+  case 6:</p><p>
+    day = "Saturday";</p><p>
+}</p>
+              </div>
+              <p>The result of day will be:</p>
+              <div class="egcontent">
+                <p>Saturday </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="general">
+            <h2>The break Keyword</h2>
+            <p>When JavaScript reaches a break keyword, it <span class="imp">breaks</span> out of the switch block.</p>
+            <p>This will stop the execution inside the switch block.</p>
+            <p>It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.</p>
+
+          </div>
+
+          <div class="general">
+            <h2>The default Keyword</h2>
+
+            <p>The <span class="imp">default</span> keyword specifies the code to run if there is no case match:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <p>The <span class="imp">getDay()</span> method returns the weekday as a number between 0 and 6.</p>
+              <p>If today is neither Saturday (6) nor Sunday (0), write a default message:</p>
+              <div class="egcontent">
+                <p>switch (new Date().getDay()) {</p><p>
+  case 6:</p><p>
+    text = "Today is Saturday";</p><p>
+    break;</p><p>
+  case 0:</p><p>
+    text = "Today is Sunday";</p><p>
+    break;</p><p>
+  default:</p><p>
+    text = "Looking forward to the Weekend";</p><p>
+}</p>
+              </div>
+              <p>The result of text will be:</p>
+              <div class="egcontent">
+                <p>Today is Saturday </p>
+              </div>
+            </div>
+            <p>The <span class="imp">default</span> case does not have to be the last case in a switch block:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>switch (new Date().getDay()) {</p><p>
+  default:</p><p>
+    text = "Looking forward to the Weekend";</p><p>
+    break;</p><p>
+  case 6:</p><p>
+    text = "Today is Saturday";</p><p>
+    break;</p><p>
+  case 0:</p><p>
+    text = "Today is Sunday";</p><p>
+}</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="conditions.html"> &lt; Previous </a>
+            <a class="rightbutton but" href="loopfor.html">Next &gt;</a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>

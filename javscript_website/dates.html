@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Dates</title>
+    <link rel = "icon" href ="fire.jfif" type = "image/x-icon">
+    <link rel="stylesheet" href="intro.css">
+  </head>
+  <body>
+<!-- header-->
+    <div class="header">
+      <h1>Javascript <span style="color:#008fb3">Tutorial</span></h1>
+    </div>
+
+<!-- navigation-->
+
+<div class="navbar">
+  <ul class="navul">
+    <li class="navli"><a href="home.html">Home</a></li>
+    <li class="navli"><a class="active_nav" href="intro.html">JS Tutorial</a></li>
+    <li class="navli"><a href="quiz.html">Quiz</a></li>
+    <li class="navli"><a href="questions.html">Assignments</a></li>
+    <li class="navli"><a href="jquery.html">What's New</a></li>
+    <li class="navli"><a href="about.html">About Us</a></li>
+  </ul>
+</div>
+
+<!-- main content-->
+
+    <div class="row">
+      <div class="column leftmenu">
+          <h2>JS Contents</h2>
+          <a href="intro.html">Introduction</a>
+          <a href="whereto.html">Where to</a>
+          <a href="state.html">Statements</a>
+          <a href="syntax.html">Syntax</a>
+          <a href="variables.html">Variables</a>
+          <a href="operators.html">Operators</a>
+          <a href="arithmetic.html">Arithmetic</a>
+          <a href="assignment.html">Assignment</a>
+          <a href="datatypes.html">Data Types</a>
+          <a href="functions.html">Functions</a>
+          <a href="objects.html">Objects</a>
+          <a href="events.html">Events</a>
+          <a href="strings.html">Strings</a>
+          <a href="stringmethods.html">Strings Methods</a>
+          <a href="numbers.html">Numbers</a>
+          <a href="arrays.html">Arrays</a>
+          <a href="arraysmethods.html">Array Methods</a>
+          <a href="arrayiteration.html">Array Iteration</a>
+          <a class="active" href="dates.html">Dates</a>
+          <a href="dateformats.html">Date Formats</a>
+          <a href="dategetmethods.html">Date Get Methods</a>
+          <a href="datesetmethods.html">Date Set Methods</a>
+          <a href="math.html">Math</a>
+
+          <a href="booleans.html">Booleans</a>
+          <a href="comparision.html">Comparision</a>
+          <a href="conditions.html">Conditions</a>
+          <a href="switch.html">Switch</a>
+          <a href="loopfor.html">Loop For</a>
+          <a href="loopwhile.html">Loop While</a>
+          <a href="break.html">Break</a>
+
+        </div>
+      <!-- right content-->
+        <div class="column main">
+          <h1>JavaScript Date Objects</h1>
+
+          <div class="pagination">
+            <a class="leftbutton but" href="arrayiteration.html"> < Previous </a>
+            <a class="rightbutton but" href="dateformats.html">Next ></a>
+          </div>
+          <div class="general">
+            <p>JavaScript Date Object lets us work with dates:</p>
+            <div class="highlight">
+              <p>Wed Feb 10 2021 22:59:18 GMT+0530 (India Standard Time)</p>
+            </div>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var d = new Date();</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>JavaScript Date Output</h2>
+            <p>By default, JavaScript will use the browser's time zone and display a date as a full text string:</p>
+            <p>Wed Feb 10 2021 22:59:18 GMT+0530 (India Standard Time</p>
+
+          </div>
+          <div class="general">
+            <h2>Creating Date Objects</h2>
+            <p>Date objects are created with the <span class="imp">new Date()</span> constructor.</p>
+            <p>There are 4 ways to create a new date object:</p>
+            <div class="example">
+              <div class="egcontent">
+                <p>new Date()</p><p>
+new Date(year, month, day, hours, minutes, seconds, milliseconds)</p><p>
+new Date(milliseconds)</p><p>
+new Date(date string)</p>
+              </div>
+            </div>
+          </div>
+          <div class="general">
+            <h2>new Date()</h2>
+            <p><span class="imp">new Date()</span> creates a new date object with the current date and time:</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var d = new Date();</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Date objects are static. The computer time is ticking, but date objects are not.</p>
+            </div>
+          </div>
+          <div class="general">
+            <h2>new Date(year, month, ...)</h2>
+            <p><span class="imp">new Date(year, month, ...)</span> creates a new date object with a specified date and time.</p>
+            <p>7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var d = new Date(2018, 11, 24, 10, 33, 30, 0);</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <p>Note: JavaScript counts months from 0 to 11.</p>
+              <p>January is 0. December is 11.</p>
+            </div>
+            <p>6 numbers specify year, month, day, hour, minute, second</p>
+            <div class="example">
+              <h3>Example</h3>
+              <div class="egcontent">
+                <p>var d = new Date(2018, 11, 24, 10, 33, 30);</p>
+              </div>
+            </div>
+            <p>5 numbers specify year, month, day, hour, and minute.</p>
+            <p>4 numbers specify year, month, day, and hour.</p>
+            <p>3 numbers specify year, month, and day</p>
+            <p>2 numbers specify year and month.</p>
+            <div class="highlight">
+              <p>You cannot omit month. If you supply only one parameter it will be treated as milliseconds.</p>
+            </div>
+          </div>
+
+
+
+          <div class="pagination">
+            <a class="leftbutton but" href="arrayiteration.html"> < Previous </a>
+            <a class="rightbutton but" href="dateformats.html">Next ></a>
+          </div>
+        </div>
+        <!-- subcolumn right-->
+        <div class="column right">
+          <h2>References</h1>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla JS</a>
+         <a href="https://www.w3schools.com/js/default.asp">w3schools JS</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p>Tamal Krushna Das and Subham Sekhar Tripathy JavaScript Tutorial © Copyright 2021. All Rights Reserved.</p>
+    </div>
+
+  </body>
+</html>
